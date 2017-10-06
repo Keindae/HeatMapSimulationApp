@@ -8,7 +8,6 @@
 
     <!-- Material Design Lite -->
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <!-- Material Design icon font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -134,22 +133,8 @@
         <div class="page-content">
             <div class="flex-container">
                 <div id="map-card" class="mdl-card mdl-shadow--2dp"></div>
-                <script>
-                    var map;
-                    var marker;
-
-                    function initMap() {
-                        map = new google.maps.Map(document.getElementById('map-card'), {
-                            center: {lat: 42.955267, lng: -85.671772},
-                            zoom: 11
-                        });
-
-                        marker = new google.maps.Marker({
-                            position: {lat: 42.970371, lng: -85.665655},
-                            title: "Helen Devos Children's Hospital"
-                        });
-                    }
-                </script>
+                <script src="js/cityPolygons.js"></script>
+                <script src="js/main.js"></script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn6Efi-lrZXCwx6ekjv--xksuIJEVCSkk&callback=initMap"
                         async defer></script>
 

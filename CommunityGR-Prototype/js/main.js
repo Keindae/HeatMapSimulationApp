@@ -1,10 +1,11 @@
-var map;
+var googleMap;
 var marker;
+var polygonMap = new Map();
 
 function initMap() {
-    map = new google.maps.Map(document.getElementById('map-card'), {
+    googleMap = new google.maps.Map(document.getElementById('map-card'), {
         center: {lat: 42.955267, lng: -85.671772},
-        zoom: 11
+        zoom: 10
     });
 
     marker = new google.maps.Marker({
@@ -12,23 +13,12 @@ function initMap() {
         title: "Helen Devos Children's Hospital"
     });
 
-    map.data.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/wyomingPolygon.json');
-    map.data.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/grandvillePolygon.json');
-    map.data.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/kentwoodPolygon.json');
-    map.data.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/comstockParkPolygon.json');
-    map.data.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/spartaPolygon.json');
-    map.data.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/byronCenter.json');
-    map.data.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/cedarSpringsPolygon.json');
-    map.data.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/rockfordPolygon.json');
-    map.data.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/lowellPolygon.json');
-    map.data.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/eastGrandRapidsPolygon.json');
-    map.data.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/caledoniaPolygon.json');
-    map.data.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/grandRapidsPolygon.json');s
+    setBoundaries();
 }
 
 function onChangeCheckbox(checkbox){
     if(checkbox.checked){
-        marker.setMap(map);
+        marker.setMap(googleMap);
     }
     else {
         marker.setMap(null);

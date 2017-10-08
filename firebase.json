@@ -3,7 +3,7 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "/Users/mattnoblett/Documents/HeatMapSimulationApp/CommunityGR-Prototype",
+    "public": "CommunityGR-Prototype",
     "ignore": [
       "firebase.json",
       "**/.*",

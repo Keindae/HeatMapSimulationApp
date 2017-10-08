@@ -54,6 +54,7 @@ function setBoundaries() {
     spartaData.setStyle({
         fillColor: 'orange',
         visibile: false
+
     });
     spartaData.setMap(googleMap);
     polygonMap.set('sparta', spartaData);
@@ -62,7 +63,7 @@ function setBoundaries() {
     grandRapidsData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/grandRapidsPolygon.json');
     grandRapidsData.setStyle({
         fillColor: 'purple',
-        visibile: false
+        visible: false
     });
     grandRapidsData.setMap(googleMap);
     polygonMap.set('grandRapids', grandRapidsData);
@@ -123,6 +124,9 @@ function setBoundaries() {
 
     walkerData = new google.maps.Data();
     walkerData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/walkerPolygon.json');
+    walkerData.setStyle({
+       visible: false
+    });
     walkerData.setMap(googleMap);
 
     setListeners();

@@ -16,6 +16,19 @@ function initMap() {
     setBoundaries();
 }
 
+function grandRapidsCheckBox(event){
+    if(event.checked){
+        grandRapidsData.setStyle({
+            visible: true
+        });
+    }
+    else{
+        grandRapidsData.setStyle({
+            visible: false
+        });
+    }
+}
+
 function wyomingCheckbox(event){
     if(event.checked){
         wyomingData.setStyle({
@@ -146,14 +159,14 @@ function caledoniaCheckbox(event){
     }
 }
 
-function grandRapidsCheckBox(event){
+function spartaCheckbox(event){
     if(event.checked){
-        grandRapidsData.setStyle({
-           visible: true
+    spartaData.setStyle({
+            visible: true
         });
     }
     else{
-        grandRapidsData.setStyle({
+    spartaData.setStyle({
             visible: false
         });
     }

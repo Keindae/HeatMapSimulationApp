@@ -16,7 +16,8 @@ function setBoundaries() {
     wyomingData = new google.maps.Data();
     wyomingData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/wyomingPolygon.json');
     wyomingData.setStyle({
-        fillColor: 'green'
+        fillColor: 'green',
+        visibile: false
     });
     wyomingData.setMap(googleMap);
     polygonMap.set("wyoming", wyomingData);
@@ -24,7 +25,8 @@ function setBoundaries() {
     grandvilleData = new google.maps.Data();
     grandvilleData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/grandvillePolygon.json');
     grandvilleData.setStyle({
-        fillColor: 'red'
+        fillColor: 'red',
+        visibile: false
     });
     grandvilleData.setMap(googleMap);
     polygonMap.set('grandville', grandvilleData);
@@ -32,7 +34,8 @@ function setBoundaries() {
     kentwoodData = new google.maps.Data();
     kentwoodData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/kentwoodPolygon.json');
     kentwoodData.setStyle({
-        fillColor: 'blue'
+        fillColor: 'blue',
+        visible: false
     });
     kentwoodData.setMap(googleMap);
     polygonMap.set('kentwood', kentwoodData);
@@ -40,7 +43,8 @@ function setBoundaries() {
     comstockData = new google.maps.Data();
     comstockData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/comstockParkPolygon.json');
     comstockData.setStyle({
-        fillColor: 'yellow'
+        fillColor: 'yellow',
+        visible: false
     });
     comstockData.setMap(googleMap);
     polygonMap.set('comstock', comstockData);
@@ -48,7 +52,8 @@ function setBoundaries() {
     spartaData = new google.maps.Data();
     spartaData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/spartaPolygon.json');
     spartaData.setStyle({
-        fillColor: 'orange'
+        fillColor: 'orange',
+        visibile: false
     });
     spartaData.setMap(googleMap);
     polygonMap.set('sparta', spartaData);
@@ -56,7 +61,8 @@ function setBoundaries() {
     grandRapidsData = new google.maps.Data();
     grandRapidsData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/grandRapidsPolygon.json');
     grandRapidsData.setStyle({
-        fillColor: 'purple'
+        fillColor: 'purple',
+        visibile: false
     });
     grandRapidsData.setMap(googleMap);
     polygonMap.set('grandRapids', grandRapidsData);
@@ -64,7 +70,8 @@ function setBoundaries() {
     byronCenterData = new google.maps.Data();
     byronCenterData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/byronCenter.json');
     byronCenterData.setStyle({
-        fillColor: 'pink'
+        fillColor: 'pink',
+        visible: false
     });
     byronCenterData.setMap(googleMap);
     polygonMap.set('byronCenter', byronCenterData);
@@ -72,7 +79,8 @@ function setBoundaries() {
     cedarSpringsData = new google.maps.Data();
     cedarSpringsData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/cedarSpringsPolygon.json');
     cedarSpringsData.setStyle({
-        fillColor: 'violet'
+        fillColor: 'violet',
+        visible: false
     });
     cedarSpringsData.setMap(googleMap);
     polygonMap.set('cedarSprings', cedarSpringsData);
@@ -80,7 +88,8 @@ function setBoundaries() {
     rockfordData = new google.maps.Data();
     rockfordData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/rockfordPolygon.json');
     rockfordData.setStyle({
-        fillColor: 'indigo'
+        fillColor: 'indigo',
+        visible: false
     });
     rockfordData.setMap(googleMap);
     polygonMap.set('rockford', rockfordData);
@@ -88,7 +97,8 @@ function setBoundaries() {
     lowellData = new google.maps.Data();
     lowellData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/lowellPolygon.json');
     lowellData.setStyle({
-        fillColor: 'darkblue'
+        fillColor: 'darkblue',
+        visible: false
     });
     lowellData.setMap(googleMap);
     polygonMap.set('lowell', lowellData);
@@ -96,7 +106,8 @@ function setBoundaries() {
     eastGrandRapidsData = new google.maps.Data();
     eastGrandRapidsData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/eastGrandRapidsPolygon.json');
     eastGrandRapidsData.setStyle({
-        fillColor: 'gray'
+        fillColor: 'gray',
+        visible: false
     });
     eastGrandRapidsData.setMap(googleMap);
     polygonMap.set('eastGrandRapids', eastGrandRapidsData);
@@ -104,7 +115,8 @@ function setBoundaries() {
     caledoniaData = new google.maps.Data();
     caledoniaData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/caledoniaPolygon.json');
     caledoniaData.setStyle({
-        fillColor: 'lime'
+        fillColor: 'lime',
+        visible: false
     });
     caledoniaData.setMap(googleMap);
     polygonMap.set('caledonia', caledoniaData);

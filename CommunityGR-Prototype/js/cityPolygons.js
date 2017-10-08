@@ -17,7 +17,7 @@ function setBoundaries() {
     wyomingData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/wyomingPolygon.json');
     wyomingData.setStyle({
         fillColor: 'green',
-        visibile: false
+        visible: false
     });
     wyomingData.setMap(googleMap);
     polygonMap.set("wyoming", wyomingData);
@@ -26,7 +26,7 @@ function setBoundaries() {
     grandvilleData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/grandvillePolygon.json');
     grandvilleData.setStyle({
         fillColor: 'red',
-        visibile: false
+        visible: false
     });
     grandvilleData.setMap(googleMap);
     polygonMap.set('grandville', grandvilleData);
@@ -53,7 +53,7 @@ function setBoundaries() {
     spartaData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/spartaPolygon.json');
     spartaData.setStyle({
         fillColor: 'orange',
-        visibile: false
+        visible: false
 
     });
     spartaData.setMap(googleMap);

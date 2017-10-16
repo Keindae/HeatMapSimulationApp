@@ -145,8 +145,8 @@ function setListeners() {
     var miDemographicInfo = new google.maps.InfoWindow({
       content: "Michigan Demographics"
     });
-    
-    miDemographicInfo.addListener('click', function(event)) {
+
+    miDemographicInfo.addListener('click', function(event) {
       miDemographicInfo.open(googleMap, this);
       miDemographicInfo.setPosition(event.latLng);
     });

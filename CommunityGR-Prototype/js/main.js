@@ -178,7 +178,7 @@ function spartaCheckbox(event){
     }
 }
 
-funcion demographicsCheckBox(event){
+function demographicsCheckBox(event){
   if(event.checked){
     miDemographic.setStyle({
       visible: true

@@ -14,7 +14,7 @@
     <style>
 
         .sideNavChecks {
-            margin-left: 20px;
+            margin-left: 10px;
         }
         .flex-container {
             text-align: center;
@@ -32,8 +32,6 @@
           min-height: 500px;
           margin: auto;
         }
-
-
     </style>
 </head>
 <body>
@@ -63,6 +61,7 @@
         <span class="mdl-layout-title">Filters</span>
         <nav class="mdl-navigation">
           <h5>City Boundaries</h5>
+          <div class="sideNavChecks">
             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-13">
               <input type="checkbox" onchange="grandRapidsCheckBox(this)" id="checkbox-13" class="mdl-checkbox__input">
               <span class="mdl-checkbox__label">Grand Rapids</span>
@@ -111,6 +110,7 @@
               <input type="checkbox" onchange="spartaCheckbox(this)" id="checkbox-24" class="mdl-checkbox__input">
               <span class="mdl-checkbox__label">Sparta</span>
             </label>
+          </div>
             <h5>Demographics</h5>
                 <div class="sideNavChecks">
                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
@@ -136,7 +136,7 @@
             <h5>Education</h5>
                 <div class="sideNavChecks">
                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-5">
-                        <input type="checkbox" id="checkbox-5" class="mdl-checkbox__input">
+                        <input type="checkbox" onchange="highSchoolChangeMarker(this)" id="checkbox-5" class="mdl-checkbox__input">
                         <span class="mdl-checkbox__label">Schools</span>
                     </label>
                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-6">
@@ -212,7 +212,6 @@
         </div>
     </main>
 </div>
-
 
 <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
 <script>

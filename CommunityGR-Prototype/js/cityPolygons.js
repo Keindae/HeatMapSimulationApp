@@ -11,6 +11,14 @@ var lowellData;
 var eastGrandRapidsData;
 var caledoniaData;
 var walkerData;
+var miDemographic;
+
+
+function setDemographics(){
+  miDemographic = new google.maps.Data();
+  miDemographic.loadGeoJson('http://gis-michigan.opendata.arcgis.com/datasets/172a00f7218b455299682f4d76562757_13.geojson');
+
+}
 
 function setBoundaries() {
     wyomingData = new google.maps.Data();
@@ -133,6 +141,16 @@ function setBoundaries() {
 }
 
 function setListeners() {
+
+    var miDemographicInfo = new google.maps.InfoWindow({
+      content: "Michigan Demographics"
+    });
+    
+    miDemographicInfo.addListener('click', function(event)) {
+      miDemographicInfo.open(googleMap, this);
+      miDemographicInfo.setPosition(event.latLng);
+    });
+
     var wyomingInfoWindow = new google.maps.InfoWindow({
         content: "City Of Wyoming"
     });

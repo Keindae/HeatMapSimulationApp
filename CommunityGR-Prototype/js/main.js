@@ -1,5 +1,6 @@
 var googleMap;
 var marker;
+var highschoolMarker;
 var polygonMap = new Map();
 
 function initMap() {
@@ -10,7 +11,12 @@ function initMap() {
 
     marker = new google.maps.Marker({
         position: {lat: 42.970371, lng: -85.665655},
-        title: "Helen Devos Children's Hospital"
+        title: "Helen Devos Children's Hopsital"
+    });
+
+    highSchoolMarker = new google.maps.Marker({
+      position: {lat: 43.033235, lng: -85.749957},
+      title: "Kenowa Hills High School"
     });
 
     setBoundaries();
@@ -172,6 +178,18 @@ function spartaCheckbox(event){
     }
 }
 
+funcion demographicsCheckBox(event){
+  if(event.checked){
+    miDemographic.setStyle({
+      visible: true
+    });
+  }else {
+    miDemographic.setStyle({
+      visible: false
+    });
+  }
+}
+
 function onChangeCheckbox(checkbox){
     if(checkbox.checked){
         marker.setMap(googleMap);
@@ -179,4 +197,13 @@ function onChangeCheckbox(checkbox){
     else {
         marker.setMap(null);
     }
+}
+
+function highSchoolChangeMarker(checkbox){
+  if(checkbox.checked){
+    highSchoolMarker.setMap(googleMap);
+  }
+  else{
+   highSchoolMarker.setMap(null);
+  }
 }

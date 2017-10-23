@@ -6,7 +6,8 @@ var polygonMap = new Map();
 function initMap() {
     googleMap = new google.maps.Map(document.getElementById('map-card'), {
         center: {lat: 42.955267, lng: -85.671772},
-        zoom: 10
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.TERRAIN
     });
 
     marker = new google.maps.Marker({

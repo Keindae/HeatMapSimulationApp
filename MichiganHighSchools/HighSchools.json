@@ -1,0 +1,109 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kenowa Hills Highschool"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.75039386749268,
+          43.032760685832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grandville High School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.77002763748169,
+          42.87973793695002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grand Rapids Public Schools"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.66383361816406,
+          42.95686222916467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rockford High School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.56536436080933,
+          43.092239881215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "East Kentwood High School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.62046766281128,
+          42.85020151850449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wyoming High School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.70026874542235,
+          42.90966884564424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Comstock Park High School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.665599,
+          43.055083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sparta Senior High School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.717194,
+          43.150441
+        ]
+      }
+    }
+  ]
+}

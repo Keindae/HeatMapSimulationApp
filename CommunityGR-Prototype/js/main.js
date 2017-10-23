@@ -23,7 +23,7 @@ function initMap() {
     setBoundaries();
 }
 
-
+//The error I am getting, "setStyle" does not exist
 function publicHighSchoolsCheckBox(event){
   if(event.checked){
     michiganHighSchools.setStyle({

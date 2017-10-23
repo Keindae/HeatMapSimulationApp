@@ -23,6 +23,19 @@ function initMap() {
     setBoundaries();
 }
 
+function publicHighSchoolsCheckBox(event){
+  if(event.checked){
+    michiganHighSchools.setStyle({
+      visible: true
+    });
+  }
+  else{
+    michiganHighSchools.setStyle({
+      visible: false
+    });
+  }
+}
+
 function grandRapidsCheckBox(event){
     if(event.checked){
         grandRapidsData.setStyle({

@@ -14,17 +14,6 @@ var walkerData;
 var miDemographic;
 
 
-function setDemographics(){
-  miDemographic = new google.maps.Data();
-  miDemographic.loadGeoJson('http://gis-michigan.opendata.arcgis.com/datasets/172a00f7218b455299682f4d76562757_13.geojson');
-
-}
-
-function setHighSchools(){
-  var michiganHighSchools = new google.maps.Data();
-  michiganHighSchools.loadGeoJson('/Users/mattnoblett/Documents/HeatMapSimulationApp/MichiganHighSchools/HighSchools.json');
-}
-
 function setBoundaries() {
     wyomingData = new google.maps.Data();
     wyomingData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/wyomingPolygon.json');
@@ -259,4 +248,18 @@ function setListeners() {
         walkerInfoWindow.open(googleMap, this);
         walkerInfoWindow.setPosition(event.latLng);
     });
+}
+
+function setDemographics(){
+  miDemographic = new google.maps.Data();
+  miDemographic.loadGeoJson('http://gis-michigan.opendata.arcgis.com/datasets/172a00f7218b455299682f4d76562757_13.geojson');
+
+}
+
+function setHighSchools(){
+  var michiganHighSchools = new google.maps.Data();
+  michiganHighSchools.loadGeoJson('https://github.com/Keindae/HeatMapSimulationApp/blob/WorkingOnHTML/MichiganHighSchools/HighSchools.json');
+  michiganHighSchools.setStyle({
+    visible: false
+  })
 }

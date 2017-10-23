@@ -20,6 +20,11 @@ function setDemographics(){
 
 }
 
+function setHighSchools(){
+  var michiganHighSchools = new google.maps.Data();
+  michiganHighSchools.loadGeoJson('/Users/mattnoblett/Documents/HeatMapSimulationApp/MichiganHighSchools/HighSchools.json');
+}
+
 function setBoundaries() {
     wyomingData = new google.maps.Data();
     wyomingData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/wyomingPolygon.json');

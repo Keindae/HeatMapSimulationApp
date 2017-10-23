@@ -130,6 +130,7 @@ function comstockCheckbox(event){
 function rockfordCheckbox(event){
     if(event.checked){
     rockfordData.setStyle({
+            fillColor: 'purple'
             visible: true
         });
     }
@@ -143,6 +144,7 @@ function rockfordCheckbox(event){
 function cedarSpringsCheckbox(event){
     if(event.checked){
     cedarSpringsData.setStyle({
+            fillColor: 'blue'
             visible: true
         });
     }
@@ -156,11 +158,13 @@ function cedarSpringsCheckbox(event){
 function caledoniaCheckbox(event){
     if(event.checked){
     caledoniaData.setStyle({
+            fillColor: 'green'
             visible: true
         });
     }
     else{
     caledoniaData.setStyle({
+
             visible: false
         });
     }
@@ -170,6 +174,7 @@ function spartaCheckbox(event){
     if(event.checked){
     spartaData.setStyle({
             visible: true
+            fillColor: 'red'
         });
     }
     else{

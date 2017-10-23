@@ -12,7 +12,17 @@ var eastGrandRapidsData;
 var caledoniaData;
 var walkerData;
 var miDemographic;
+var michiganHighSchools;
 
+
+function setHighSchools(){
+  michiganHighSchools = new google.maps.Data();
+  michiganHighSchools.loadGeoJson('https://raw.githubusercontent.com/Keindae/HeatMapSimulationApp/WorkingOnHTML/MichiganHighSchools/HighSchools.json');
+  michiganHighSchools.setStyle({
+    visible: false
+  });
+  michiganHighSchools.setMap(googleMap);
+}
 
 function setBoundaries() {
     wyomingData = new google.maps.Data();
@@ -254,12 +264,4 @@ function setDemographics(){
   miDemographic = new google.maps.Data();
   miDemographic.loadGeoJson('http://gis-michigan.opendata.arcgis.com/datasets/172a00f7218b455299682f4d76562757_13.geojson');
 
-}
-
-function setHighSchools(){
-  var michiganHighSchools = new google.maps.Data();
-  michiganHighSchools.loadGeoJson('https://github.com/Keindae/HeatMapSimulationApp/blob/WorkingOnHTML/MichiganHighSchools/HighSchools.json');
-  michiganHighSchools.setStyle({
-    visible: false
-  })
 }

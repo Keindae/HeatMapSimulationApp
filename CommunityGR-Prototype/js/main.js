@@ -23,13 +23,9 @@ function initMap() {
     setBoundaries();
 }
 
+
 function publicHighSchoolsCheckBox(event){
   if(event.checked){
-    michiganHighSchools.setStyle({
-      visible: true
-    });
-  }
-  else{
     michiganHighSchools.setStyle({
       visible: false
     });
@@ -39,6 +35,7 @@ function publicHighSchoolsCheckBox(event){
 function grandRapidsCheckBox(event){
     if(event.checked){
         grandRapidsData.setStyle({
+            fillColor: 'red',
             visible: true
         });
     }
@@ -52,6 +49,7 @@ function grandRapidsCheckBox(event){
 function wyomingCheckbox(event){
     if(event.checked){
         wyomingData.setStyle({
+            fillColor: 'blue',
             visible: true
         });
     }
@@ -65,6 +63,7 @@ function wyomingCheckbox(event){
 function grandvilleCheckbox(event){
     if(event.checked){
     grandvilleData.setStyle({
+            fillColor: 'cyan',
             visible: true
         });
     }
@@ -78,6 +77,7 @@ function grandvilleCheckbox(event){
 function walkerCheckbox(event){
     if(event.checked){
     walkerData.setStyle({
+            fillColor: 'navy',
             visible: true
         });
     }
@@ -91,6 +91,7 @@ function walkerCheckbox(event){
 function kentwoodCheckbox(event){
     if(event.checked){
     kentwoodData.setStyle({
+            fillColor: 'teal',
             visible: true
         });
     }
@@ -104,6 +105,7 @@ function kentwoodCheckbox(event){
 function lowellCheckbox(event){
     if(event.checked){
     lowellData.setStyle({
+            fillColor: 'magenta',
             visible: true
         });
     }
@@ -117,6 +119,7 @@ function lowellCheckbox(event){
 function byronCenterCheckbox(event){
     if(event.checked){
     byronCenterData.setStyle({
+            fillColor: 'yellow',
             visible: true
         });
     }
@@ -130,6 +133,7 @@ function byronCenterCheckbox(event){
 function comstockCheckbox(event){
     if(event.checked){
     comstockData.setStyle({
+            fillColor: 'orange',
             visible: true
         });
     }
@@ -143,7 +147,7 @@ function comstockCheckbox(event){
 function rockfordCheckbox(event){
     if(event.checked){
     rockfordData.setStyle({
-            fillColor: 'purple'
+            fillColor: 'purple',
             visible: true
         });
     }
@@ -157,7 +161,7 @@ function rockfordCheckbox(event){
 function cedarSpringsCheckbox(event){
     if(event.checked){
     cedarSpringsData.setStyle({
-            fillColor: 'blue'
+            fillColor: 'blue',
             visible: true
         });
     }
@@ -171,13 +175,12 @@ function cedarSpringsCheckbox(event){
 function caledoniaCheckbox(event){
     if(event.checked){
     caledoniaData.setStyle({
-            fillColor: 'green'
+            fillColor: 'green',
             visible: true
         });
     }
     else{
     caledoniaData.setStyle({
-
             visible: false
         });
     }
@@ -186,8 +189,8 @@ function caledoniaCheckbox(event){
 function spartaCheckbox(event){
     if(event.checked){
     spartaData.setStyle({
+            fillColor: 'red',
             visible: true
-            fillColor: 'red'
         });
     }
     else{

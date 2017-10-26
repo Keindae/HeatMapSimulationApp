@@ -211,12 +211,20 @@ function highSchoolChangeMarker(checkbox){
 
 function parksCheckbox(event){
     if(event.checked){
-        parks.setStyle({
+        grandRapidsParks.setStyle({
+            visible: true
+        });
+
+        wyomingParks.setStyle({
             visible: true
         });
     }
     else{
-        parks.setStyle({
+        grandRapidsParks.setStyle({
+            visible: false
+        });
+
+        wyomingParks.setStyle({
             visible: false
         });
     }

@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Calvin Crest Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.740781,
+          42.89519645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heritage Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.769863096722,
+          42.88764295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lee Street Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7366388618444,
+          42.91633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wedgewood park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7646814158635,
+          42.903863
+        ]
+      }
+    }
+  ]
+}

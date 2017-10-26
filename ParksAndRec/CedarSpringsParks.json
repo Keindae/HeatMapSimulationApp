@@ -1,0 +1,31 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": " Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.5689897690263,
+          43.11289895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Morley Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.5520755454576,
+          43.2181705
+        ]
+      }
+    }
+  ]
+}

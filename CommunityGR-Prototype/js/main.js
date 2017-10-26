@@ -21,14 +21,39 @@ function initMap() {
     });
 
     setBoundaries();
+    setHighSchools();
+    setMiddleSchools();
+    setElementarySchools();
 }
 
 //The error I am getting, "setStyle" does not exist
-function publicHighSchoolsCheckBox(event){
+function publicHighSchoolsCheckBox(checkbox){
+  if(checkbox.checked){
+    michiganHighSchools.setMap(googleMap);
+  }
+  else {
+    michiganHighSchools.setMap(null);
+    }
+}
+
+function publicMiddleSchoolsCheckBox(event){
   if(event.checked){
-    michiganHighSchools.setStyle({
-      visible: false
+    michiganMiddleSchools.setStyle({
+      visible: true
     });
+  }else{
+
+    visible: false
+  }
+}
+
+function publicElementarySchoolsCheckBox(event){
+  if(event.checked){
+    michiganElementarySchools.setStyle({
+      visible: true
+    });
+  }else{
+    visible: false
   }
 }
 

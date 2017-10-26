@@ -14,7 +14,6 @@ var walkerData;
 var miDemographic;
 var michiganHighSchools;
 
-
 function setHighSchools(){
   michiganHighSchools = new google.maps.Data();
   michiganHighSchools.loadGeoJson('https://raw.githubusercontent.com/Keindae/HeatMapSimulationApp/WorkingOnHTML/MichiganHighSchools/HighSchools.json');
@@ -23,6 +22,34 @@ function setHighSchools(){
   });
   michiganHighSchools.setMap(googleMap);
 }
+
+function setMiddleSchools(){
+  var michiganMiddleSchools = new google.maps.Data();
+  michiganMiddleSChools.loadGeoJson('JsonFile here');
+  michiganMiddleSchools.setStyle({
+    visible: false
+  });
+  michiganMiddleSchools.setMap(googleMap);
+}
+
+function setElementarySchools(){
+  var michiganElementarySchools = new google.maps.Data();
+  michiganElementarySchools.loadGeoJson('JsonFile here');
+  michiganElementarySchools.setStyle({
+    visible: false
+  });
+  michiganElementarySchools.setMap(googleMap);
+}
+
+function setNonPublicElementarySChools(){
+  var nonPublicElementarySchools = new google.maps.Data();
+  nonPublicElementarySchools.loadGeoJson('JsonFile Here');
+  nonPublicElementarySchools.setStyle({
+    visible: true
+  });
+  nonPublicElementarySchools.setMap(googleMap);
+}
+
 
 function setBoundaries() {
     wyomingData = new google.maps.Data();
@@ -145,7 +172,7 @@ function setBoundaries() {
 }
 
 function setListeners() {
-  
+
     var wyomingInfoWindow = new google.maps.InfoWindow({
         content: "City Of Wyoming"
     });

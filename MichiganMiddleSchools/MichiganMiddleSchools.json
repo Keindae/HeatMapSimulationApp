@@ -1,0 +1,44 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kenowa Hills Middle School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.74921369552612,
+          43.036007348966855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sparta Middle School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.707497,
+          43.150674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grandville Middle School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.76485633850098,
+          42.90071781979312
+        ]
+      }
+    }
+  ]
+}

@@ -208,3 +208,16 @@ function highSchoolChangeMarker(checkbox){
    highSchoolMarker.setMap(null);
   }
 }
+
+function parksCheckbox(event){
+    if(event.checked){
+        parks.setStyle({
+            visible: true
+        });
+    }
+    else{
+        parks.setStyle({
+            visible: false
+        });
+    }
+}

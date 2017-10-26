@@ -104,6 +104,84 @@
           42.959487
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Campo Grande Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.620636,
+          42.946792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aberdeen Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.648408,
+          43.003533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Veterans Memorial Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.666748,
+          42.963667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sigsbee Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.637404,
+          42.954271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hillcrest Dog Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.637142,
+          42.967693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Riverside Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.668989,
+          43.011612
+        ]
+      }
     }
   ]
 }

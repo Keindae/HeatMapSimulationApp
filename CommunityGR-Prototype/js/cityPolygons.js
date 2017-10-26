@@ -37,7 +37,7 @@ function setMiddleSchools(){
 
 function setElementarySchools(){
   michiganElementarySchools = new google.maps.Data();
-  //michiganElementarySchools.loadGeoJson('JsonFile here');
+  michiganElementarySchools.loadGeoJson('https://raw.githubusercontent.com/Keindae/HeatMapSimulationApp/WorkingOnHTML/MichiganElementarySchools/MichiganElementarySchools.json');
   michiganElementarySchools.setStyle({
     visible: false
   });

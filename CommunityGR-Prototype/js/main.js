@@ -54,12 +54,15 @@ function publicMiddleSchoolsCheckBox(checkbox){
 }
 
 function publicElementarySchoolsCheckBox(event){
-  if(event.checked){
+  if(checbox.checked){
     michiganElementarySchools.setStyle({
       visible: true
     });
-  }else{
-    visible: false
+  }
+  else{
+    michiganElementarySchools.setStyle({
+      visible: false
+    });
   }
 }
 

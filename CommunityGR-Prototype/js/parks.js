@@ -95,4 +95,104 @@ function setParks() {
     spartaParks.setStyle({
         visible: false
     });
+
+    setParkListener();
+}
+
+function setParkListener() {
+    var grandRapidsParksInfo = new google.maps.InfoWindow();
+    grandRapidsParks.addListener('click', function (event) {
+        var myHTML = event.feature.getProperty("name");
+        grandRapidsParksInfo.setContent("<div style='width:150px;'>" + myHTML + "</div>");
+        grandRapidsParksInfo.setPosition(event.latLng);
+        grandRapidsParksInfo.open(googleMap);
+    });
+
+    var wyomingParksInfo = new google.maps.InfoWindow();
+    wyomingParks.addListener('click', function (event) {
+        var myHTML = event.feature.getProperty("name");
+        wyomingParksInfo.setContent("<div style='width:150px;'>" + myHTML + "</div>");
+        wyomingParksInfo.setPosition(event.latLng);
+        wyomingParksInfo.open(googleMap);
+    });
+
+    var grandvilleParksInfo = new google.maps.InfoWindow();
+    grandvilleParks.addListener('click', function (event) {
+        var myHTML = event.feature.getProperty("name");
+        grandvilleParksInfo.setContent("<div style='width:150px;'>" + myHTML + "</div>");
+        grandvilleParksInfo.setPosition(event.latLng);
+        grandvilleParksInfo.open(googleMap);
+    });
+
+    var walkerParksInfo = new google.maps.InfoWindow();
+    walkerParks.addListener('click', function (event) {
+        var myHTML = event.feature.getProperty("name");
+        walkerParksInfo.setContent("<div style='width:150px;'>" + myHTML + "</div>");
+        walkerParksInfo.setPosition(event.latLng);
+        walkerParksInfo.open(googleMap);
+    });
+
+    var kentwoodParksInfo = new google.maps.InfoWindow();
+    kentwoodParks.addListener('click', function (event) {
+        var myHTML = event.feature.getProperty("name");
+        kentwoodParksInfo.setContent("<div style='width:150px;'>" + myHTML + "</div>");
+        kentwoodParksInfo.setPosition(event.latLng);
+        kentwoodParksInfo.open(googleMap);
+    });
+
+    var lowellParksInfo = new google.maps.InfoWindow();
+    lowellParks.addListener('click', function (event) {
+        var myHTML = event.feature.getProperty("name");
+        lowellParksInfo.setContent("<div style='width:150px;'>" + myHTML + "</div>");
+        lowellParksInfo.setPosition(event.latLng);
+        lowellParksInfo.open(googleMap);
+    });
+
+    var byronCenterParksInfo = new google.maps.InfoWindow();
+    byronCenterParks.addListener('click', function (event) {
+        var myHTML = event.feature.getProperty("name");
+        byronCenterParksInfo.setContent("<div style='width:150px;'>" + myHTML + "</div>");
+        byronCenterParksInfo.setPosition(event.latLng);
+        byronCenterParksInfo.open(googleMap);
+    });
+
+    var comstockParksInfo = new google.maps.InfoWindow();
+    comstockParks.addListener('click', function (event) {
+        var myHTML = event.feature.getProperty("name");
+        comstockParksInfo.setContent("<div style='width:150px;'>" + myHTML + "</div>");
+        comstockParksInfo.setPosition(event.latLng);
+        comstockParksInfo.open(googleMap);
+    });
+
+    var rockfordParksInfo = new google.maps.InfoWindow();
+    rockfordParks.addListener('click', function (event) {
+        var myHTML = event.feature.getProperty("name");
+        rockfordParksInfo.setContent("<div style='width:150px;'>" + myHTML + "</div>");
+        rockfordParksInfo.setPosition(event.latLng);
+        rockfordParksInfo.open(googleMap);
+    });
+
+    var cedarSpringsParksInfo = new google.maps.InfoWindow();
+    cedarSpringsParks.addListener('click', function (event) {
+        var myHTML = event.feature.getProperty("name");
+        cedarSpringsParksInfo.setContent("<div style='width:150px;'>" + myHTML + "</div>");
+        cedarSpringsParksInfo.setPosition(event.latLng);
+        cedarSpringsParksInfo.open(googleMap);
+    });
+
+    var caledoniaParksInfo = new google.maps.InfoWindow();
+    caledoniaParks.addListener('click', function (event) {
+        var myHTML = event.feature.getProperty("name");
+        caledoniaParksInfo.setContent("<div style='width:150px;'>" + myHTML + "</div>");
+        caledoniaParksInfo.setPosition(event.latLng);
+        caledoniaParksInfo.open(googleMap);
+    });
+
+    var spartaParksInfo = new google.maps.InfoWindow();
+    spartaParks.addListener('click', function (event) {
+        var myHTML = event.feature.getProperty("name");
+        spartaParksInfo.setContent("<div style='width:150px;'>" + myHTML + "</div>");
+        spartaParksInfo.setPosition(event.latLng);
+        spartaParksInfo.open(googleMap);
+    });
 }

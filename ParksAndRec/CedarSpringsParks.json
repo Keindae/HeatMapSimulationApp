@@ -4,13 +4,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": " Park"
+        "name": "Riggle Park"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -85.5689897690263,
-          43.11289895
+          -85.5579420524428,
+          43.222199
         ]
       }
     },

@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lakeside Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.5173045397849,
+          42.7944202
+        ]
+      }
+    }
+  ]
+}

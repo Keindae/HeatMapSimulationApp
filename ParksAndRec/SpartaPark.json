@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rogers Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7082585029508,
+          43.16271615
+        ]
+      }
+    }
+  ]
+}

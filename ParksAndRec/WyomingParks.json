@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "40th Street Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.6920353047631,
+          42.8905031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gezon Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.711621224627,
+          42.86453065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lamar Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7289571927704,
+          42.92463175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oriole Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.6982160194682,
+          42.88702355
+        ]
+      }
+    }
+  ]
+}

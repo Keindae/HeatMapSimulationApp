@@ -20,6 +20,7 @@ function initMap() {
     });
 
     setBoundaries();
+    setParks();
 }
 
 function grandRapidsCheckBox(event){

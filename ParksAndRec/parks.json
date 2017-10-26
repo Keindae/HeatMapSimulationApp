@@ -1,0 +1,109 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Plaster Creek Family Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7278976,
+          42.9565034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coit Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7278978,
+          42.956712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Belknap Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7278978,
+          42.956712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ball Perkins Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7278978,
+          42.956712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Garfield Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7278978,
+          42.956712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Richmond Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7278978,
+          42.956712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cherry Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7278978,
+          42.956712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Foster Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7278978,
+          42.956712
+        ]
+      }
+    }
+  ]
+}

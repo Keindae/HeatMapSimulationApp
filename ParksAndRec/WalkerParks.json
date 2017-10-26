@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Harmon Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.755652924654,
+          42.96383695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Johnson Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7695138789662,
+          42.9213245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Millennium Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7351647711823,
+          42.9425747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Walker City Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7627348458594,
+          42.93097155
+        ]
+      }
+    }
+  ]
+}

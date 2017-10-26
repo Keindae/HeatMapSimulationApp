@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cahill Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.5689897690263,
+          43.11289895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Garden Club Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.5612553388294,
+          43.1204243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memorial Park Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.5560572320409,
+          43.1240368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Peppler Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.562647337037,
+          43.1202436
+        ]
+      }
+    }
+  ]
+}

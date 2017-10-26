@@ -13,6 +13,9 @@ var caledoniaData;
 var walkerData;
 var miDemographic;
 var michiganHighSchools;
+var michiganMiddleSchools;
+var michiganElementarySchools;
+var nonPublicElementarySchools;
 
 function setHighSchools(){
   michiganHighSchools = new google.maps.Data();
@@ -24,8 +27,8 @@ function setHighSchools(){
 }
 
 function setMiddleSchools(){
-  var michiganMiddleSchools = new google.maps.Data();
-  michiganMiddleSChools.loadGeoJson('JsonFile here');
+  michiganMiddleSchools = new google.maps.Data();
+  michiganMiddleSchools.loadGeoJson('https://raw.githubusercontent.com/Keindae/HeatMapSimulationApp/WorkingOnHTML/MichiganMiddleSchools/MichiganMiddleSchools.json');
   michiganMiddleSchools.setStyle({
     visible: false
   });
@@ -33,8 +36,8 @@ function setMiddleSchools(){
 }
 
 function setElementarySchools(){
-  var michiganElementarySchools = new google.maps.Data();
-  michiganElementarySchools.loadGeoJson('JsonFile here');
+  michiganElementarySchools = new google.maps.Data();
+  //michiganElementarySchools.loadGeoJson('JsonFile here');
   michiganElementarySchools.setStyle({
     visible: false
   });
@@ -42,8 +45,8 @@ function setElementarySchools(){
 }
 
 function setNonPublicElementarySChools(){
-  var nonPublicElementarySchools = new google.maps.Data();
-  nonPublicElementarySchools.loadGeoJson('JsonFile Here');
+  nonPublicElementarySchools = new google.maps.Data();
+  //nonPublicElementarySchools.loadGeoJson('JsonFile Here');
   nonPublicElementarySchools.setStyle({
     visible: true
   });

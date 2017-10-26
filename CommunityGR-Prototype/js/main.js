@@ -29,21 +29,27 @@ function initMap() {
 //The error I am getting, "setStyle" does not exist
 function publicHighSchoolsCheckBox(checkbox){
   if(checkbox.checked){
-    michiganHighSchools.setMap(googleMap);
+    michiganHighSchools.setStyle({
+      visible: true
+    });
   }
   else {
-    michiganHighSchools.setMap(null);
+    michiganHighSchools.setStyle({
+      visible: false
+    });
     }
 }
 
-function publicMiddleSchoolsCheckBox(event){
-  if(event.checked){
+function publicMiddleSchoolsCheckBox(checkbox){
+  if(checkbox.checked){
     michiganMiddleSchools.setStyle({
       visible: true
     });
-  }else{
-
-    visible: false
+  }
+  else{
+    michiganMiddleSchools.setStyle({
+      visible: false
+    });
   }
 }
 

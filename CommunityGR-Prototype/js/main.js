@@ -6,7 +6,8 @@ var polygonMap = new Map();
 function initMap() {
     googleMap = new google.maps.Map(document.getElementById('map-card'), {
         center: {lat: 42.955267, lng: -85.671772},
-        zoom: 10
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.TERRAIN
     });
 
     marker = new google.maps.Marker({
@@ -20,11 +21,55 @@ function initMap() {
     });
 
     setBoundaries();
+    setHighSchools();
+    setMiddleSchools();
+    setElementarySchools();
+}
+
+//The error I am getting, "setStyle" does not exist
+function publicHighSchoolsCheckBox(checkbox){
+  if(checkbox.checked){
+    michiganHighSchools.setStyle({
+      visible: true
+    });
+  }
+  else {
+    michiganHighSchools.setStyle({
+      visible: false
+    });
+    }
+}
+
+function publicMiddleSchoolsCheckBox(checkbox){
+  if(checkbox.checked){
+    michiganMiddleSchools.setStyle({
+      visible: true
+    });
+  }
+  else{
+    michiganMiddleSchools.setStyle({
+      visible: false
+    });
+  }
+}
+
+function publicElementarySchoolsCheckBox(checkbox){
+  if(checkbox.checked){
+    michiganElementarySchools.setStyle({
+      visible: true
+    });
+  }
+  else{
+    michiganElementarySchools.setStyle({
+      visible: false
+    });
+  }
 }
 
 function grandRapidsCheckBox(event){
     if(event.checked){
         grandRapidsData.setStyle({
+            fillColor: 'red',
             visible: true
         });
     }
@@ -38,6 +83,7 @@ function grandRapidsCheckBox(event){
 function wyomingCheckbox(event){
     if(event.checked){
         wyomingData.setStyle({
+            fillColor: 'blue',
             visible: true
         });
     }
@@ -51,6 +97,7 @@ function wyomingCheckbox(event){
 function grandvilleCheckbox(event){
     if(event.checked){
     grandvilleData.setStyle({
+            fillColor: 'cyan',
             visible: true
         });
     }
@@ -64,6 +111,7 @@ function grandvilleCheckbox(event){
 function walkerCheckbox(event){
     if(event.checked){
     walkerData.setStyle({
+            fillColor: 'navy',
             visible: true
         });
     }
@@ -77,6 +125,7 @@ function walkerCheckbox(event){
 function kentwoodCheckbox(event){
     if(event.checked){
     kentwoodData.setStyle({
+            fillColor: 'teal',
             visible: true
         });
     }
@@ -90,6 +139,7 @@ function kentwoodCheckbox(event){
 function lowellCheckbox(event){
     if(event.checked){
     lowellData.setStyle({
+            fillColor: 'magenta',
             visible: true
         });
     }
@@ -103,6 +153,7 @@ function lowellCheckbox(event){
 function byronCenterCheckbox(event){
     if(event.checked){
     byronCenterData.setStyle({
+            fillColor: 'yellow',
             visible: true
         });
     }
@@ -116,6 +167,7 @@ function byronCenterCheckbox(event){
 function comstockCheckbox(event){
     if(event.checked){
     comstockData.setStyle({
+            fillColor: 'orange',
             visible: true
         });
     }
@@ -129,6 +181,7 @@ function comstockCheckbox(event){
 function rockfordCheckbox(event){
     if(event.checked){
     rockfordData.setStyle({
+            fillColor: 'purple',
             visible: true
         });
     }
@@ -142,6 +195,7 @@ function rockfordCheckbox(event){
 function cedarSpringsCheckbox(event){
     if(event.checked){
     cedarSpringsData.setStyle({
+            fillColor: 'blue',
             visible: true
         });
     }
@@ -155,6 +209,7 @@ function cedarSpringsCheckbox(event){
 function caledoniaCheckbox(event){
     if(event.checked){
     caledoniaData.setStyle({
+            fillColor: 'green',
             visible: true
         });
     }
@@ -168,6 +223,7 @@ function caledoniaCheckbox(event){
 function spartaCheckbox(event){
     if(event.checked){
     spartaData.setStyle({
+            fillColor: 'red',
             visible: true
         });
     }

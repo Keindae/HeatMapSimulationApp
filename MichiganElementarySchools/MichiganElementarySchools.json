@@ -1,0 +1,83 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Walker Junior High School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7741904258728,
+          43.01410865151381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zinser Elementary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.76597213745117,
+          42.98766607979025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Blanford Elementary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.74427843093872,
+          42.994211087493454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kenowa Hills Public Schools Day Care and Learning Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.76565027236938,
+          43.00205789967619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cummings Elementary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.77414751052856,
+          42.96019142132593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Harrison Park Elementary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.6870937347412,
+          42.991888238886226
+        ]
+      }
+    }
+  ]
+}

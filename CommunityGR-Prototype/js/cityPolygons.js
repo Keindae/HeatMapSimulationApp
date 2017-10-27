@@ -12,13 +12,47 @@ var eastGrandRapidsData;
 var caledoniaData;
 var walkerData;
 var miDemographic;
+var michiganHighSchools;
+var michiganMiddleSchools;
+var michiganElementarySchools;
+var nonPublicElementarySchools;
 
-
-function setDemographics(){
-  miDemographic = new google.maps.Data();
-  miDemographic.loadGeoJson('http://gis-michigan.opendata.arcgis.com/datasets/172a00f7218b455299682f4d76562757_13.geojson');
-
+function setHighSchools(){
+  michiganHighSchools = new google.maps.Data();
+  michiganHighSchools.loadGeoJson('https://raw.githubusercontent.com/Keindae/HeatMapSimulationApp/WorkingOnHTML/MichiganHighSchools/HighSchools.json');
+  michiganHighSchools.setStyle({
+    visible: false
+  });
+  michiganHighSchools.setMap(googleMap);
 }
+
+function setMiddleSchools(){
+  michiganMiddleSchools = new google.maps.Data();
+  michiganMiddleSchools.loadGeoJson('https://raw.githubusercontent.com/Keindae/HeatMapSimulationApp/WorkingOnHTML/MichiganMiddleSchools/MichiganMiddleSchools.json');
+  michiganMiddleSchools.setStyle({
+    visible: false
+  });
+  michiganMiddleSchools.setMap(googleMap);
+}
+
+function setElementarySchools(){
+  michiganElementarySchools = new google.maps.Data();
+  michiganElementarySchools.loadGeoJson('https://raw.githubusercontent.com/Keindae/HeatMapSimulationApp/WorkingOnHTML/MichiganElementarySchools/MichiganElementarySchools.json');
+  michiganElementarySchools.setStyle({
+    visible: false
+  });
+  michiganElementarySchools.setMap(googleMap);
+}
+
+function setNonPublicElementarySChools(){
+  nonPublicElementarySchools = new google.maps.Data();
+  //nonPublicElementarySchools.loadGeoJson('JsonFile Here');
+  nonPublicElementarySchools.setStyle({
+    visible: true
+  });
+  nonPublicElementarySchools.setMap(googleMap);
+}
+
 
 function setBoundaries() {
     wyomingData = new google.maps.Data();
@@ -142,15 +176,6 @@ function setBoundaries() {
 
 function setListeners() {
 
-    var miDemographicInfo = new google.maps.InfoWindow({
-      content: "Michigan Demographics"
-    });
-
-    miDemographicInfo.addListener('click', function(event) {
-      miDemographicInfo.open(googleMap, this);
-      miDemographicInfo.setPosition(event.latLng);
-    });
-
     var wyomingInfoWindow = new google.maps.InfoWindow({
         content: "City Of Wyoming"
     });
@@ -254,4 +279,10 @@ function setListeners() {
         walkerInfoWindow.open(googleMap, this);
         walkerInfoWindow.setPosition(event.latLng);
     });
+}
+
+function setDemographics(){
+  miDemographic = new google.maps.Data();
+  miDemographic.loadGeoJson('http://gis-michigan.opendata.arcgis.com/datasets/172a00f7218b455299682f4d76562757_13.geojson');
+
 }

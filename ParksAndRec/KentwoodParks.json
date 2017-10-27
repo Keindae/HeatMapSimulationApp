@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "East Paris Nature Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.5681923760479,
+          42.8563597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kelloggwoods Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.6582815349624,
+          42.86310115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Paris Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.5814424906025,
+          42.85844085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stanaback Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.5992227,
+          42.8946964
+        ]
+      }
+    }
+  ]
+}

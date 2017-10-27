@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dwight Lydell Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.6692045343956,
+          43.03524345
+        ]
+      }
+    }
+  ]
+}

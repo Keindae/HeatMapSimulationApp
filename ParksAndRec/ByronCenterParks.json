@@ -1,0 +1,31 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bicentennial Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7238994008032,
+          42.81769295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Whistlestop Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.7192055747993,
+          42.82311825
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Creekside Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.3556318444085,
+          42.9373218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Recreation Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.339210293701,
+          42.93015635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Richards Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.3432748941578,
+          42.935604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stoney Lakeside Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.3529696672346,
+          42.9280814
+        ]
+      }
+    }
+  ]
+}

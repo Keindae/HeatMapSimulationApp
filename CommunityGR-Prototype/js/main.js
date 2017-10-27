@@ -16,11 +16,12 @@ function initMap() {
     });
 
     highSchoolMarker = new google.maps.Marker({
-      position: {lat: 43.033235, lng: -85.749957},
-      title: "Kenowa Hills High School"
+        position: {lat: 43.033235, lng: -85.749957},
+        title: "Kenowa Hills High School"
     });
 
     setBoundaries();
+    setParks();
     setHighSchools();
     setMiddleSchools();
     setElementarySchools();
@@ -66,28 +67,28 @@ function publicElementarySchoolsCheckBox(checkbox){
   }
 }
 
-function grandRapidsCheckBox(event){
-    if(event.checked){
+function grandRapidsCheckBox(event) {
+    if (event.checked) {
         grandRapidsData.setStyle({
             fillColor: 'red',
             visible: true
         });
     }
-    else{
+    else {
         grandRapidsData.setStyle({
             visible: false
         });
     }
 }
 
-function wyomingCheckbox(event){
-    if(event.checked){
+function wyomingCheckbox(event) {
+    if (event.checked) {
         wyomingData.setStyle({
             fillColor: 'blue',
             visible: true
         });
     }
-    else{
+    else {
         wyomingData.setStyle({
             visible: false
         });
@@ -101,8 +102,8 @@ function grandvilleCheckbox(event){
             visible: true
         });
     }
-    else{
-    grandvilleData.setStyle({
+    else {
+        grandvilleData.setStyle({
             visible: false
         });
     }
@@ -115,8 +116,8 @@ function walkerCheckbox(event){
             visible: true
         });
     }
-    else{
-    walkerData.setStyle({
+    else {
+        walkerData.setStyle({
             visible: false
         });
     }
@@ -129,8 +130,8 @@ function kentwoodCheckbox(event){
             visible: true
         });
     }
-    else{
-    kentwoodData.setStyle({
+    else {
+        kentwoodData.setStyle({
             visible: false
         });
     }
@@ -143,8 +144,8 @@ function lowellCheckbox(event){
             visible: true
         });
     }
-    else{
-    lowellData.setStyle({
+    else {
+        lowellData.setStyle({
             visible: false
         });
     }
@@ -157,8 +158,8 @@ function byronCenterCheckbox(event){
             visible: true
         });
     }
-    else{
-    byronCenterData.setStyle({
+    else {
+        byronCenterData.setStyle({
             visible: false
         });
     }
@@ -171,8 +172,8 @@ function comstockCheckbox(event){
             visible: true
         });
     }
-    else{
-    comstockData.setStyle({
+    else {
+        comstockData.setStyle({
             visible: false
         });
     }
@@ -185,8 +186,8 @@ function rockfordCheckbox(event){
             visible: true
         });
     }
-    else{
-    rockfordData.setStyle({
+    else {
+        rockfordData.setStyle({
             visible: false
         });
     }
@@ -199,8 +200,8 @@ function cedarSpringsCheckbox(event){
             visible: true
         });
     }
-    else{
-    cedarSpringsData.setStyle({
+    else {
+        cedarSpringsData.setStyle({
             visible: false
         });
     }
@@ -213,8 +214,8 @@ function caledoniaCheckbox(event){
             visible: true
         });
     }
-    else{
-    caledoniaData.setStyle({
+    else {
+        caledoniaData.setStyle({
             visible: false
         });
     }
@@ -227,27 +228,27 @@ function spartaCheckbox(event){
             visible: true
         });
     }
-    else{
-    spartaData.setStyle({
+    else {
+        spartaData.setStyle({
             visible: false
         });
     }
 }
 
-function demographicsCheckBox(event){
-  if(event.checked){
-    miDemographic.setStyle({
-      visible: true
-    });
-  }else {
-    miDemographic.setStyle({
-      visible: false
-    });
-  }
+function demographicsCheckBox(event) {
+    if (event.checked) {
+        miDemographic.setStyle({
+            visible: true
+        });
+    } else {
+        miDemographic.setStyle({
+            visible: false
+        });
+    }
 }
 
-function onChangeCheckbox(checkbox){
-    if(checkbox.checked){
+function onChangeCheckbox(checkbox) {
+    if (checkbox.checked) {
         marker.setMap(googleMap);
     }
     else {
@@ -255,11 +256,112 @@ function onChangeCheckbox(checkbox){
     }
 }
 
-function highSchoolChangeMarker(checkbox){
-  if(checkbox.checked){
-    highSchoolMarker.setMap(googleMap);
-  }
-  else{
-   highSchoolMarker.setMap(null);
-  }
+function highSchoolChangeMarker(checkbox) {
+    if (checkbox.checked) {
+        highSchoolMarker.setMap(googleMap);
+    }
+    else {
+        highSchoolMarker.setMap(null);
+    }
+}
+
+function parksCheckbox(event) {
+    if (event.checked) {
+        grandRapidsParks.setStyle({
+            visible: true
+        });
+
+        wyomingParks.setStyle({
+            visible: true
+        });
+
+        grandvilleParks.setStyle({
+            visible: true
+        });
+
+        walkerParks.setStyle({
+            visible: true
+        });
+
+        kentwoodParks.setStyle({
+            visible: true
+        });
+
+        lowellParks.setStyle({
+            visible: true
+        });
+
+        byronCenterParks.setStyle({
+            visible: true
+        });
+
+        comstockParks.setStyle({
+            visible: true
+        });
+
+        rockfordParks.setStyle({
+            visible: true
+        });
+
+        cedarSpringsParks.setStyle({
+            visible: true
+        });
+
+        caledoniaParks.setStyle({
+            visible: true
+        });
+
+        spartaParks.setStyle({
+            visible: true
+        });
+    }
+    else {
+        grandRapidsParks.setStyle({
+            visible: false
+        });
+
+        wyomingParks.setStyle({
+            visible: false
+        });
+
+        grandvilleParks.setStyle({
+            visible: false
+        });
+
+        walkerParks.setStyle({
+            visible: false
+        });
+
+        kentwoodParks.setStyle({
+            visible: false
+        });
+
+        lowellParks.setStyle({
+            visible: false
+        });
+
+        byronCenterParks.setStyle({
+            visible: false
+        });
+
+        comstockParks.setStyle({
+            visible: false
+        });
+
+        rockfordParks.setStyle({
+            visible: false
+        });
+
+        cedarSpringsParks.setStyle({
+            visible: false
+        });
+
+        caledoniaParks.setStyle({
+            visible: false
+        });
+
+        spartaParks.setStyle({
+            visible: false
+        });
+    }
 }

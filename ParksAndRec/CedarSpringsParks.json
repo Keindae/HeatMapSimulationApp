@@ -1,0 +1,31 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Riggle Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.5579420524428,
+          43.222199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Morley Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.5520755454576,
+          43.2181705
+        ]
+      }
+    }
+  ]
+}

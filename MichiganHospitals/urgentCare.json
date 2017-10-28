@@ -1,0 +1,70 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mercy Health Saint Mary's Emergency Room"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.66295385360718,
+          42.957616024296755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Metro Health Urgent Care"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.56879758834839,
+          42.95186810318509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "OAM NOW-Urgent Care"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.60250759124756,
+          42.98369478816583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AFC Urgent Care"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.62568187713623,
+          42.91210480853501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Spectrum Health Urgent Care Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.58941841125488,
+          43.01366934271276
+        ]
+      }
+    }
+  ]
+}

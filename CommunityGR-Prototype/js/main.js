@@ -12,6 +12,7 @@ function initMap() {
     /*
     * Calls to all of the set functions
     */
+    
     setBoundaries();
     setParks();
     setHighSchools();

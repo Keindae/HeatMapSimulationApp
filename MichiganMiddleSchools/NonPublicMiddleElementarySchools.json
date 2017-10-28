@@ -1,0 +1,44 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grand Rapids Christian Middle School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.61647653579712,
+          42.92627863061572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Legay Christian School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.66608667373657,
+          42.841186794471504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "North Hills Classical Academy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.62201261520384,
+          42.98371833412912
+        ]
+      }
+    }
+  ]
+}

@@ -9,25 +9,58 @@ function initMap() {
         zoom: 10,
         mapTypeId: google.maps.MapTypeId.TERRAIN
     });
-
-    marker = new google.maps.Marker({
-        position: {lat: 42.970371, lng: -85.665655},
-        title: "Helen Devos Children's Hopsital"
-    });
-
-    highSchoolMarker = new google.maps.Marker({
-        position: {lat: 43.033235, lng: -85.749957},
-        title: "Kenowa Hills High School"
-    });
+    /*
+    * Calls to all of the set functions
+    */
 
     setBoundaries();
     setParks();
     setHighSchools();
     setMiddleSchools();
     setElementarySchools();
+    setNonPublicElementarySchools();
+    setNonPublicMiddleSchools();
+    setPrivateHighSchools();
+    setHospitals();
+    setUrgentCare();
 }
 
-//The error I am getting, "setStyle" does not exist
+/*
+* Function for displaying the urgent care location.
+*/
+function urgentCareCheckBox(checkbox){
+  if(checkbox.checked){
+    michiganUrgentCare.setStyle({
+      visible: true
+    });
+  }
+  else{
+    michiganUrgentCare.setStyle({
+      visible: false
+    });
+  }
+}
+
+/*
+* Function for the hospitals
+*/
+function hospitalsCheckBox(checkbox){
+  if(checkbox.checked){
+    michiganHospitals.setStyle({
+      visible: true
+    });
+  }
+    else{
+      michiganHospitals.setStyle({
+        visible: false
+      });
+    }
+}
+
+
+/*
+*This piece is setting up the markers for schools in the area, public and private
+*/
 function publicHighSchoolsCheckBox(checkbox){
   if(checkbox.checked){
     michiganHighSchools.setStyle({
@@ -38,6 +71,45 @@ function publicHighSchoolsCheckBox(checkbox){
     michiganHighSchools.setStyle({
       visible: false
     });
+    }
+}
+
+function privateHighSchoolsCheckBox(checkbox){
+  if(checkbox.checked){
+    nonPublicHighSchools.setStyle({
+      visible: true
+    });
+  }
+    else{
+      nonPublicHighSchools.setStyle({
+        visible: false
+      });
+    }
+}
+
+function privateMiddleSchoolsCheckBox(checkbox){
+  if(checkbox.checked){
+    nonPublicMiddleSchools.setStyle({
+      visible: true
+    });
+  }
+    else{
+      nonPublicMiddleSchools.setStyle({
+        visible: false
+      });
+    }
+}
+
+function privateElementarySchoolsCheckBox(checkbox){
+  if(checkbox.checked){
+    nonPublicElementarySchools.setStyle({
+      visible: true
+    });
+  }
+    else{
+      nonPublicElementarySchools.setStyle({
+        visible: false
+      });
     }
 }
 
@@ -67,6 +139,9 @@ function publicElementarySchoolsCheckBox(checkbox){
   }
 }
 
+/*
+* This next set of functions is responsible for the city boundaries portion
+*/
 function grandRapidsCheckBox(event) {
     if (event.checked) {
         grandRapidsData.setStyle({
@@ -256,14 +331,10 @@ function onChangeCheckbox(checkbox) {
     }
 }
 
-function highSchoolChangeMarker(checkbox) {
-    if (checkbox.checked) {
-        highSchoolMarker.setMap(googleMap);
-    }
-    else {
-        highSchoolMarker.setMap(null);
-    }
-}
+
+/*
+* This function is used to set up the parks markers.
+*/
 
 function parksCheckbox(event) {
     if (event.checked) {

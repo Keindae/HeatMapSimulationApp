@@ -1,0 +1,109 @@
+{
+   "type":"FeatureCollection",
+   "features":[
+      {
+         "type":"Feature",
+         "properties":{
+            "name":"Wellspring Preparatory High School"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -85.6439208984375,
+               42.98695974233038
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "name":"Catholic Central High School"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -85.66696643829346,
+               42.95741187236024
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "name":"West Catholic High School"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -85.70998907089233,
+               42.99637690777302
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "name":"Grand Rapids Christian High School"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -85.6229782104492,
+               42.91993066997733
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "name":"South Christian High School"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -85.66851139068604,
+               42.84008542911462
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "name":"Plymouth Christian High School"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -85.62621831893921,
+               42.980068602188325
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "name":"Covenant Christian High School"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -85.77908277511597,
+               42.93989939748894
+            ]
+         }
+      },
+      {
+         "type":"Feature",
+         "properties":{
+            "name":"Unity Christian High School"
+         },
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -85.89647769927979,
+               42.87591692798989
+            ]
+         }
+      }
+   ]
+}

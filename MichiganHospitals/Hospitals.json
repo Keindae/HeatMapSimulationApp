@@ -1,0 +1,44 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Helen Devos Children's Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.6649923324585,
+          42.96989530265369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Spectrum Health Butterworth Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.66417694091797,
+          42.968733429897185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mercy Health Saint Mary's Campus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.6623101234436,
+          42.9580714377143
+        ]
+      }
+    }
+  ]
+}

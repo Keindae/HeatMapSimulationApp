@@ -25,6 +25,9 @@ function initMap() {
     setHighSchools();
     setMiddleSchools();
     setElementarySchools();
+    setNonPublicElementarySchools();
+    setNonPublicMiddleSchools();
+    setPrivateHighSchools();
 }
 
 //The error I am getting, "setStyle" does not exist
@@ -39,6 +42,45 @@ function publicHighSchoolsCheckBox(checkbox){
       visible: false
     });
     }
+}
+
+function privateHighSchoolsCheckBox(checkbox){
+  if(checkbox.checked){
+    nonPublicHighSchools.setStyle({
+      visible: true
+    });
+    else{
+      nonPublicHighSchools.setStyle({
+        visible: false
+      });
+    }
+  }
+}
+
+function privateMiddleSchoolsCheckBox(checkbox){
+  if(checkbox.checked){
+    nonPublicMiddleSchools.setStyle({
+      visible: true
+    });
+    else{
+      nonPublicMiddleSchools.setStyle({
+        visible: false
+      });
+    }
+  }
+}
+
+function privateElementarySchoolsCheckBox(checkbox){
+  if(checkbox.checked){
+    nonPublicElementarySchools.setStyle({
+      visible: true
+    });
+    else{
+      nonPublicElementarySchools.setStyle({
+        visible: false
+      });
+    }
+  }
 }
 
 function publicMiddleSchoolsCheckBox(checkbox){

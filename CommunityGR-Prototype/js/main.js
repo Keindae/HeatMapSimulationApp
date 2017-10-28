@@ -12,7 +12,7 @@ function initMap() {
     /*
     * Calls to all of the set functions
     */
-    
+
     setBoundaries();
     setParks();
     setHighSchools();
@@ -22,6 +22,23 @@ function initMap() {
     setNonPublicMiddleSchools();
     setPrivateHighSchools();
     setHospitals();
+    setUrgentCare();
+}
+
+/*
+* Function for displaying the urgent care location.
+*/
+function urgentCareCheckBox(checkbox){
+  if(checkbox.checked){
+    michiganUrgentCare.setStyle({
+      visible: true
+    });
+  }
+  else{
+    michiganUrgentCare.setStyle({
+      visible: false
+    });
+  }
 }
 
 /*

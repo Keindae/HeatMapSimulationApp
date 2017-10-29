@@ -17,7 +17,7 @@ function setHighSchools(){
 
 function setPrivateHighSchools(){
   nonPublicHighSchools = new google.maps.Data();
-  nonPublicHighSchools.loadGeoJson('https://raw.githubusercontent.com/Keindae/HeatMapSimulationApp/Hospitals/MichiganHighSchools/PrivateHighSchools.json');
+  nonPublicHighSchools.loadGeoJson('https://raw.githubusercontent.com/Keindae/HeatMapSimulationApp/master/MichiganHighSchools/PrivateHighSchools.json');
   nonPublicHighSchools.setStyle({
     visible: false
   });
@@ -44,7 +44,7 @@ function setElementarySchools(){
 
 function setNonPublicElementarySchools(){
   nonPublicElementarySchools = new google.maps.Data();
-  nonPublicElementarySchools.loadGeoJson('https://raw.githubusercontent.com/Keindae/HeatMapSimulationApp/Hospitals/MichiganMiddleSchools/NonPublicMiddleElementarySchools.json');
+  nonPublicElementarySchools.loadGeoJson('https://raw.githubusercontent.com/Keindae/HeatMapSimulationApp/master/MichiganMiddleSchools/NonPublicMiddleElementarySchools.json');
   nonPublicElementarySchools.setStyle({
     visible: false
   });
@@ -53,7 +53,7 @@ function setNonPublicElementarySchools(){
 
 function setNonPublicMiddleSchools(){
   nonPublicMiddleSchools = new google.maps.Data();
-  nonPublicMiddleSchools.loadGeoJson('https://raw.githubusercontent.com/Keindae/HeatMapSimulationApp/Hospitals/MichiganMiddleSchools/NonPublicMiddleElementarySchools.json');
+  nonPublicMiddleSchools.loadGeoJson('https://raw.githubusercontent.com/Keindae/HeatMapSimulationApp/master/MichiganMiddleSchools/NonPublicMiddleElementarySchools.json');
   nonPublicMiddleSchools.setStyle({
     visible: false
   });

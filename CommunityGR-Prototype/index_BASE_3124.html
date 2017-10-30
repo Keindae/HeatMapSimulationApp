@@ -1,0 +1,337 @@
+<html>
+<head>
+    <!--Javascript API Key = AIzaSyCn6Efi-lrZXCwx6ekjv--xksuIJEVCSkk-->
+
+    <!-- local css -->
+    <!--<link rel="stylesheet" href="style.css">-->
+
+    <!-- Material Design Lite -->
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+
+        .sideNavChecks {
+            margin-left: 10px;
+        }
+        .flex-container {
+            text-align: center;
+        }
+        .Table-Format{
+            margin-top: 5%;
+            margin-left: 40%;
+            margin-bottom: 5%;
+        }
+
+        #map-card {
+          width: 90%;
+          height: 80%;
+          min-width: 500px;
+          min-height: 500px;
+          margin: auto;
+
+        }
+    </style>
+</head>
+<body>
+
+<!-- The drawer is always open in large screens. The header is always shown,
+  even in small screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">CommunityGR</span>
+            <div class="mdl-layout-spacer"></div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+                <label class="mdl-button mdl-js-button mdl-button--icon"
+                       for="fixed-header-drawer-exp">
+                    <i class="material-icons">search</i>
+                </label>
+                <!-- need to grab the input from the div -->
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Filters</span>
+        <nav class="mdl-navigation">
+          <h5>City Boundaries</h5>
+          <div class="sideNavChecks">
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-13">
+              <input type="checkbox" onchange="grandRapidsCheckBox(this)" id="checkbox-13" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Grand Rapids</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-14">
+              <input type="checkbox" onchange="wyomingCheckbox(this)" id="checkbox-14" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Wyoming</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-15">
+              <input type="checkbox" onchange="grandvilleCheckbox(this)" id="checkbox-15" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Grandville</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-16">
+              <input type="checkbox" onchange="walkerCheckbox(this)" id="checkbox-16" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Walker</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-17">
+              <input type="checkbox" onchange="kentwoodCheckbox(this)" id="checkbox-17" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Kentwood</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-18">
+              <input type="checkbox" onchange="lowellCheckbox(this)" id="checkbox-18" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Lowell</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-19">
+              <input type="checkbox" onchange="byronCenterCheckbox(this)" id="checkbox-19" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Byron Center</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-20">
+              <input type="checkbox" onchange="comstockCheckbox(this)" id="checkbox-20" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Comstock Park</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-21">
+              <input type="checkbox" onchange="rockfordCheckbox(this)" id="checkbox-21" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Rockford</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-22">
+              <input type="checkbox" onchange="cedarSpringsCheckbox(this)" id="checkbox-22" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Cedar Springs</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-23">
+              <input type="checkbox" onchange="caledoniaCheckbox(this)" id="checkbox-23" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Caledonia</span>
+            </label>
+            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-24">
+              <input type="checkbox" onchange="spartaCheckbox(this)" id="checkbox-24" class="mdl-checkbox__input">
+              <span class="mdl-checkbox__label">Sparta</span>
+            </label>
+          </div>
+            <h5>Demographics</h5>
+                <div class="sideNavChecks">
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                        <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+                        <span class="mdl-checkbox__label">Ethnicity</span>
+                    </label>
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+                        <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+                        <span class="mdl-checkbox__label">Other</span>
+                    </label>
+                </div>
+            <h5>Economy</h5>
+                <div class="sideNavChecks">
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-3">
+                        <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
+                        <span class="mdl-checkbox__label">Tax Rate</span>
+                    </label>
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-4">
+                        <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input">
+                        <span class="mdl-checkbox__label">Other</span>
+                    </label>
+                </div>
+            <h5>Education</h5>
+                <div class="sideNavChecks">
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-5">
+                      <input type="checkbox" onchange="publicHighSchoolsCheckBox(this)" id="checkbox-5" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Public Highschool</span>
+                    </label>
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-25">
+                      <input type="checkbox" onchange="publicMiddleSchoolsCheckBox(this)" id="checkbox-25" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Public Middle</span>
+                    </label>
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-26">
+                      <input type="checkbox" onchange="publicElementarySchoolsCheckBox(this)" id="checkbox-26" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Public Elementary </span>
+                    </label>
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-27">
+                      <input type="checkbox" onchange="privateHighSchoolsCheckBox(this)" id="checkbox-27" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Non-Public Highschool</span>
+                    </label>
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-28">
+                      <input type="checkbox" onchange="privateMiddleSchoolsCheckBox(this)" id="checkbox-28" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Non-Public Middle</span>
+                    </label>
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-29">
+                      <input type="checkbox" onchange="privateElementarySchoolsCheckBox(this)" id="checkbox-29" class="mdl-checkbox__input">
+                      <span class="mdl-checkbox__label">Non-Public Elementary</span>
+                    </label>
+                  </div>
+            <h5>Health</h5>
+              <div class="sideNavChecks">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-7">
+                    <input type="checkbox" onchange="hospitalsCheckBox(this)" id="checkbox-7" class="mdl-checkbox__input">
+                    <span class="mdl-checkbox__label">Hospitals</span>
+                </label>
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-8">
+                    <input type="checkbox" onchange="urgentCareCheckBox(this)" id="checkbox-8" class="mdl-checkbox__input">
+                    <span class="mdl-checkbox__label">Urgent Care</span>
+                </label>
+              </div>
+            <h5>Parks / Rec</h5>
+            <div class="sideNavChecks">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-9">
+                    <input type="checkbox" onchange="parksCheckbox(this)" id="checkbox-9" class="mdl-checkbox__input">
+                    <span class="mdl-checkbox__label">Parks</span>
+                </label>
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-10">
+                    <input type="checkbox" id="checkbox-10" class="mdl-checkbox__input">
+                    <span class="mdl-checkbox__label">Rec</span>
+                </label>
+            </div>
+            <h5>Food</h5>
+            <div class="sideNavChecks">
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-11">
+                    <input type="checkbox" id="checkbox-11" class="mdl-checkbox__input">
+                    <span class="mdl-checkbox__label">Burger Joints</span>
+                </label>
+                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-12">
+                    <input type="checkbox" id="checkbox-12" class="mdl-checkbox__input">
+                    <span class="mdl-checkbox__label">Other</span>
+                </label>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <main class="mdl-layout__content">
+        <div class="page-content">
+            <div class="flex-container">
+                <div id="map-card" class="mdl-card mdl-shadow--2dp"></div>
+                <script src="js/cityPolygons.js"></script>
+                <script src="js/parks.js"></script>
+                <script src="js/main.js"></script>
+                <script src="js/Schools.js"></script>
+                <script src="js/hospitals.js"></script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn6Efi-lrZXCwx6ekjv--xksuIJEVCSkk&callback=initMap"
+                        async defer></script>
+
+                        <script src="http://d3js.org/d3.v3.min.js"></script>
+                        <div id="footer"></div>
+                        <script>
+                        // set the dimensions of the canvas
+                      var margin = {top: 20, right: 20, bottom: 70, left: 40},
+                          width = 600 - margin.left - margin.right,
+                          height = 300 - margin.top - margin.bottom;
+
+
+                      // set the ranges
+                      var x = d3.scale.ordinal().rangeRoundBands([0, width], .05);
+
+                      var y = d3.scale.linear().range([height, 0]);
+
+                      // define the axis
+                      var xAxis = d3.svg.axis()
+                          .scale(x)
+                          .orient("bottom")
+
+
+                      var yAxis = d3.svg.axis()
+                          .scale(y)
+                          .orient("left")
+                          .ticks(10);
+
+
+                      // add the SVG element
+                      var svg = d3.select("#footer").append("svg")
+                          .attr("width", width + margin.left + margin.right)
+                          .attr("height", height + margin.top + margin.bottom)
+                        .append("g")
+                          .attr("transform",
+                                "translate(" + margin.left + "," + margin.top + ")");
+
+
+                      // load the data
+                      d3.json("https://raw.githubusercontent.com/Keindae/HeatMapSimulationApp/Hospitals/MichiganHighSchools/HighschoolAmount.json", function(error, data) {
+
+                          data.forEach(function(d) {
+                              d.Letter = d.Letter;
+                              d.Freq = +d.Freq;
+                          });
+
+                        // scale the range of the data
+                        x.domain(data.map(function(d) { return d.Letter; }));
+                        y.domain([0, d3.max(data, function(d) { return d.Freq; })]);
+
+                        // add axis
+                        svg.append("g")
+                            .attr("class", "x axis")
+                            .attr("transform", "translate(0," + height + ")")
+                            .call(xAxis)
+                          .selectAll("text")
+                            .style("text-anchor", "end")
+                            .attr("dx", "-.8em")
+                            .attr("dy", "-.55em")
+                            .attr("transform", "rotate(-90)" );
+
+                        svg.append("g")
+                            .attr("class", "y axis")
+                            .call(yAxis)
+                          .append("text")
+                            .attr("transform", "rotate(-90)")
+                            .attr("y", 5)
+                            .attr("dy", ".71em")
+                            .style("text-anchor", "end")
+                            .text("Frequency");
+
+
+                        // Add bar chart
+                        svg.selectAll("bar")
+                            .data(data)
+                          .enter().append("rect")
+                            .attr("class", "bar")
+                            .attr("x", function(d) { return x(d.Letter); })
+                            .attr("width", x.rangeBand())
+                            .attr("y", function(d) { return y(d.Freq); })
+                            .attr("height", function(d) { return height - y(d.Freq); });
+
+                      });
+
+                        </script>
+
+                <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp Table-Format">
+                    <caption>Top School Districts</caption>
+                    <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th class="mdl-data-table__cell--non-numeric">Name</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="mdl-data-table__cell--non-numeric">Kenowa Hills</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="mdl-data-table__cell--non-numeric">Hudsonville</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAqxVj43PbWjo-BzVf5W_3K5uOk4WahkYk",
+    authDomain: "communitygr-521c3.firebaseapp.com",
+    databaseURL: "https://communitygr-521c3.firebaseio.com",
+    projectId: "communitygr-521c3",
+    storageBucket: "communitygr-521c3.appspot.com",
+    messagingSenderId: "1013881785811"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</body>
+</html>

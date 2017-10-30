@@ -4,6 +4,7 @@
 
     <!-- local css -->
     <!--<link rel="stylesheet" href="style.css">-->
+    <!--gradient color generator-->
 
     <!-- Material Design Lite -->
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -115,24 +116,24 @@
             <h5>Demographics</h5>
                 <div class="sideNavChecks">
                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-                      <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+                      <input type="radio" onchange="populationRadio(this)" id="option-1" class="mdl-radio__button" name="options" value="1">
                       <span class="mdl-radio__label">Population</span>
                     </label>
                      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-                      <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+                      <input type="radio" onchange="under5Radio(this)" id="option-2" class="mdl-radio__button" name="options" value="2">
                       <span class="mdl-radio__label">Percent under 5 years</span>
                     </label>
                      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
-                      <input type="radio" id="option-3" class="mdl-radio__button" name="options" value="3">
+                      <input type="radio" onchange="under18Radio(this)" id="option-3" class="mdl-radio__button" name="options" value="3">
                       <span class="mdl-radio__label">Percent under 18 years</span>
                     </label>
                      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
-                      <input type="radio" id="option-4" class="mdl-radio__button" name="options" value="4">
+                      <input type="radio" onchange="under65Radio(this)" id="option-4" class="mdl-radio__button" name="options" value="4">
                       <span class="mdl-radio__label">Percent under 65 years</span>
                     </label>
                      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-5">
-                      <input type="radio" id="option-5" class="mdl-radio__button" name="options" value="5">
-                      <span class="mdl-radio__label">Percent under 65 years and older</span>
+                      <input type="radio" onchange="over65Radio(this)" id="option-5" class="mdl-radio__button" name="options" value="5">
+                      <span class="mdl-radio__label">Percent over 65 years and older</span>
                     </label>
                 </div>
             <h5>Housing (Median Values 2011-2015)</h5>
@@ -251,10 +252,12 @@
             <div class="flex-container">
                 <div id="map-card" class="mdl-card mdl-shadow--2dp"></div>
                 <script src="js/cityPolygons.js"></script>
+                <script src="js/jsGradient.js"></script>
                 <script src="js/parks.js"></script>
                 <script src="js/main.js"></script>
                 <script src="js/Schools.js"></script>
                 <script src="js/hospitals.js"></script>
+                <script src="js/demographics.js"></script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn6Efi-lrZXCwx6ekjv--xksuIJEVCSkk&callback=initMap"
                         async defer></script>
 

@@ -13,6 +13,18 @@ var caledoniaData;
 var walkerData;
 var miDemographic;
 
+var wyomingInfoWindow;
+var grandvilleInfoWindow;
+var kentwoodInfoWindow;
+var comstockInfoWindow;
+var spartaInfoWindow;
+var grandRapidsInfoWindow;
+var byronCenterInfoWindow;
+var cedarSpringsInfoWindow;
+var rockfordInfoWindow;
+var lowellInfoWindow;
+var caledoniaInfoWindow;
+var walkerInfoWindow;
 
 
 function setBoundaries() {
@@ -137,7 +149,7 @@ function setBoundaries() {
 
 function setListeners() {
 
-    var wyomingInfoWindow = new google.maps.InfoWindow({
+    wyomingInfoWindow = new google.maps.InfoWindow({
         content: "City Of Wyoming"
     });
     wyomingData.addListener('click', function (event) {
@@ -145,7 +157,7 @@ function setListeners() {
         wyomingInfoWindow.setPosition(event.latLng);
     });
 
-    var grandvilleInfoWindow = new google.maps.InfoWindow({
+    grandvilleInfoWindow = new google.maps.InfoWindow({
         content: "City of Grandville"
     });
     grandvilleData.addListener('click', function (event) {
@@ -153,7 +165,7 @@ function setListeners() {
         grandvilleInfoWindow.setPosition(event.latLng);
     });
 
-    var kentwoodInfoWindow = new google.maps.InfoWindow({
+   kentwoodInfoWindow = new google.maps.InfoWindow({
         content: "City of Kentwood"
     });
     kentwoodData.addListener('click', function (event) {
@@ -161,7 +173,7 @@ function setListeners() {
         kentwoodInfoWindow.setPosition(event.latLng);
     });
 
-    var comstockInfoWindow = new google.maps.InfoWindow({
+    comstockInfoWindow = new google.maps.InfoWindow({
         content: "City of Comstock Park"
     });
     comstockData.addListener('click', function (event) {
@@ -169,7 +181,7 @@ function setListeners() {
         comstockInfoWindow.setPosition(event.latLng);
     });
 
-    var spartaInfoWindow = new google.maps.InfoWindow({
+    spartaInfoWindow = new google.maps.InfoWindow({
         content: "City of Sparta"
     });
     spartaData.addListener('click', function (event) {
@@ -177,7 +189,7 @@ function setListeners() {
         spartaInfoWindow.setPosition(event.latLng);
     });
 
-    var grandRapidsInfoWindow = new google.maps.InfoWindow({
+    grandRapidsInfoWindow = new google.maps.InfoWindow({
         content: "City of Grand Rapids"
     });
     grandRapidsData.addListener('click', function (event) {
@@ -185,7 +197,7 @@ function setListeners() {
         grandRapidsInfoWindow.setPosition(event.latLng);
     });
 
-    var byronCenterInfoWindow = new google.maps.InfoWindow({
+    byronCenterInfoWindow = new google.maps.InfoWindow({
         content: "City of Byron Center"
     });
     byronCenterData.addListener('click', function (event) {
@@ -193,7 +205,7 @@ function setListeners() {
         byronCenterInfoWindow.setPosition(event.latLng);
     });
 
-    var cedarSpringsInfoWindow = new google.maps.InfoWindow({
+    cedarSpringsInfoWindow = new google.maps.InfoWindow({
         content: "City of Cedar Springs"
     });
     cedarSpringsData.addListener('click', function (event) {
@@ -201,7 +213,7 @@ function setListeners() {
         cedarSpringsInfoWindow.setPosition(event.latLng);
     });
 
-    var rockfordInfoWindow = new google.maps.InfoWindow({
+    rockfordInfoWindow = new google.maps.InfoWindow({
         content: "City of Rockford"
     });
     rockfordData.addListener('click', function (event) {
@@ -209,7 +221,7 @@ function setListeners() {
         rockfordInfoWindow.setPosition(event.latLng);
     });
 
-    var lowellInfoWindow = new google.maps.InfoWindow({
+    lowellInfoWindow = new google.maps.InfoWindow({
         content: "City of Lowell"
     });
     lowellData.addListener('click', function (event) {
@@ -217,7 +229,7 @@ function setListeners() {
         lowellInfoWindow.setPosition(event.latLng);
     });
 
-    var eastGrandRapidsInfoWindow = new google.maps.InfoWindow({
+    eastGrandRapidsInfoWindow = new google.maps.InfoWindow({
         content: "City of East Grand Rapids"
     });
     eastGrandRapidsData.addListener('click', function (event) {
@@ -225,7 +237,7 @@ function setListeners() {
         eastGrandRapidsInfoWindow.setPosition(event.latLng);
     });
 
-    var caledoniaInfoWindow = new google.maps.InfoWindow({
+    caledoniaInfoWindow = new google.maps.InfoWindow({
         content: "City of Caledonia"
     });
     caledoniaData.addListener('click', function (event) {
@@ -233,7 +245,7 @@ function setListeners() {
         caledoniaInfoWindow.setPosition(event.latLng);
     });
 
-    var walkerInfoWindow = new google.maps.InfoWindow({
+    walkerInfoWindow = new google.maps.InfoWindow({
         content: "City of Walker"
     });
     walkerData.addListener('click', function (event) {

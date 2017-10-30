@@ -489,6 +489,9 @@ function parksCheckbox(event) {
             visible: false
         });
     }
+<<<<<<< HEAD
+}
+=======
 }
 
 function foodCheckbox(event){
@@ -528,4 +531,4 @@ function createMarker(place) {
         infowindow.open(googleMap, this);
     });
 }
-
+>>>>>>> bbc1ad3ab03914174acb1af657b88d6e3398950a

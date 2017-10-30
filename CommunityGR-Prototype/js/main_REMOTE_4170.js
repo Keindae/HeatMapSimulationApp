@@ -37,49 +37,6 @@ function initMap() {
 }
 
 /*
-* Toggle Demographics radio
-*/
-function populationRadio(radio){
-    if(radio.checked){
-        setPopulation();
-    } else {
-
-    }
-}
-
-function under5Radio(radio){
-    if(radio.checked){
-        setUnder5();
-    } else {
-        
-    }
-}
-
-function under18Radio(radio){
-    if(radio.checked){
-        setUnder18();
-    } else {
-        
-    }
-}
-
-function under65Radio(radio){
-    if(radio.checked){
-        setUnder65();
-    } else {
-        
-    }
-}
-
-function over65Radio(radio){
-    if(radio.checked){
-        setOver65();
-    } else {
-        
-    }
-}
-
-/*
 * Function for displaying the urgent care location.
 */
 function urgentCareCheckBox(checkbox){
@@ -528,4 +485,3 @@ function createMarker(place) {
         infowindow.open(googleMap, this);
     });
 }
-

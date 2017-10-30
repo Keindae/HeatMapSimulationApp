@@ -1,9 +1,7 @@
-var places;
 var googleMap;
 var marker;
-var infowindow;
+var highschoolMarker;
 var polygonMap = new Map();
-var grandRapidsFoodMarkers = [];
 
 function initMap() {
     googleMap = new google.maps.Map(document.getElementById('map-card'), {
@@ -11,15 +9,6 @@ function initMap() {
         zoom: 10,
         mapTypeId: google.maps.MapTypeId.TERRAIN
     });
-
-    var request = {
-        location: {lat: 42.955267, lng: -85.671772},
-        radius: '10000',
-        type: ['restaurant']
-    };
-
-    places = new google.maps.places.PlacesService(googleMap);
-    places.nearbySearch(request, callback);
     /*
     * Calls to all of the set functions
     */
@@ -34,49 +23,6 @@ function initMap() {
     setPrivateHighSchools();
     setHospitals();
     setUrgentCare();
-}
-
-/*
-* Toggle Demographics radio
-*/
-function populationRadio(radio){
-    if(radio.checked){
-        setPopulation();
-    } else {
-
-    }
-}
-
-function under5Radio(radio){
-    if(radio.checked){
-        setUnder5();
-    } else {
-        
-    }
-}
-
-function under18Radio(radio){
-    if(radio.checked){
-        setUnder18();
-    } else {
-        
-    }
-}
-
-function under65Radio(radio){
-    if(radio.checked){
-        setUnder65();
-    } else {
-        
-    }
-}
-
-function over65Radio(radio){
-    if(radio.checked){
-        setOver65();
-    } else {
-        
-    }
 }
 
 /*
@@ -490,42 +436,3 @@ function parksCheckbox(event) {
         });
     }
 }
-
-function foodCheckbox(event){
-    var marker;
-
-    for(var i = 0; i < grandRapidsFoodMarkers.length; i++){
-        marker = grandRapidsFoodMarkers[i];
-
-        if(event.checked){
-            marker.setVisible(true);
-        }
-        else{
-            marker.setVisible(false);
-        }
-    }
-}
-
-function callback(results, status) {
-    if (status == google.maps.places.PlacesServiceStatus.OK) {
-        for (var i = 0; i < results.length; i++) {
-            createMarker(results[i]);
-        }
-    }
-}
-
-function createMarker(place) {
-    infowindow = new google.maps.InfoWindow();
-    var marker = new google.maps.Marker({
-        map: googleMap,
-        position: place.geometry.location
-    });
-    marker.setVisible(false);
-    grandRapidsFoodMarkers.push(marker);
-
-    google.maps.event.addListener(marker, 'click', function() {
-        infowindow.setContent(place.name);
-        infowindow.open(googleMap, this);
-    });
-}
-

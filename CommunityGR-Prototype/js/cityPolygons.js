@@ -26,9 +26,17 @@ var lowellInfoWindow;
 var caledoniaInfoWindow;
 var walkerInfoWindow;
 
+var bounds;
 
 function setBoundaries() {
+    bounds = new google.maps.LatLngBounds();
+
     wyomingData = new google.maps.Data();
+    // var wyomingBounds = new google.maps.LatLngBounds();
+    wyomingData.addListener('click', function(e) {
+        processPoints(e.feature.getGeometry(), bounds.extend, bounds);
+        googleMap.fitBounds(bounds);
+    });
     wyomingData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/wyomingPolygon.json');
     wyomingData.setStyle({
         fillColor: 'green',
@@ -75,6 +83,11 @@ function setBoundaries() {
     polygonMap.set('sparta', spartaData);
 
     grandRapidsData = new google.maps.Data();
+    // var grandRapidsBounds = new google.maps.LatLngBounds();
+    // grandRapidsData.addListener('click', function(e) {
+    //     processPoints(e.feature.getGeometry(), bounds.extend, bounds);
+    //     googleMap.fitBounds(bounds);
+    // });
     grandRapidsData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/grandRapidsPolygon.json');
     grandRapidsData.setStyle({
         fillColor: 'purple',
@@ -93,6 +106,11 @@ function setBoundaries() {
     polygonMap.set('byronCenter', byronCenterData);
 
     cedarSpringsData = new google.maps.Data();
+    // var cedarSpringsBounds = new google.maps.LatLngBounds();
+    cedarSpringsData.addListener('click', function(e) {
+        processPoints(e.feature.getGeometry(), bounds.extend, bounds);
+        googleMap.fitBounds(bounds);
+    });
     cedarSpringsData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/cedarSpringsPolygon.json');
     cedarSpringsData.setStyle({
         fillColor: 'violet',
@@ -258,4 +276,24 @@ function setDemographics(){
   miDemographic = new google.maps.Data();
   miDemographic.loadGeoJson('http://gis-michigan.opendata.arcgis.com/datasets/172a00f7218b455299682f4d76562757_13.geojson');
 
+}
+
+function zoom(map) {
+    var bounds = new google.maps.LatLngBounds();
+    map.data.forEach(function(feature) {
+        processPoints(feature.getGeometry(), bounds.extend, bounds);
+    });
+    map.fitBounds(bounds);
+}
+
+function processPoints(geometry, callback, thisArg) {
+    if (geometry instanceof google.maps.LatLng) {
+        callback.call(thisArg, geometry);
+    } else if (geometry instanceof google.maps.Data.Point) {
+        callback.call(thisArg, geometry.get());
+    } else {
+        geometry.getArray().forEach(function(g) {
+            processPoints(g, callback, thisArg);
+        });
+    }
 }

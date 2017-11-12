@@ -14,5 +14,9 @@
 {
 	"Letter" : "Sparta",
 	"Freq": 1
+},
+{
+  "Letter" : "Zeeland",
+  "Freq" : 2
 }
 ]

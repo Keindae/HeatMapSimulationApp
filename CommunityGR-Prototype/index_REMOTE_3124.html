@@ -4,7 +4,6 @@
 
     <!-- local css -->
     <!--<link rel="stylesheet" href="style.css">-->
-    <!--gradient color generator-->
 
     <!-- Material Design Lite -->
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -126,50 +125,48 @@
             </div>
             <h5>Demographics</h5>
                 <div class="sideNavChecks">
-                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-                      <input type="radio" onchange="populationRadio(this)" id="option-1" class="mdl-radio__button" name="options" value="1">
-                      <span class="mdl-radio__label">Population</span>
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                        <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+                        <span class="mdl-checkbox__label">Ethnicity</span>
                     </label>
-                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-                      <input type="radio" onchange="under5Radio(this)" id="option-2" class="mdl-radio__button" name="options" value="2">
-                      <span class="mdl-radio__label">Percent under 5 years</span>
-                    </label>
-                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
-                      <input type="radio" onchange="under18Radio(this)" id="option-3" class="mdl-radio__button" name="options" value="3">
-                      <span class="mdl-radio__label">Percent under 18 years</span>
-                    </label>
-                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
-                      <input type="radio" onchange="under65Radio(this)" id="option-4" class="mdl-radio__button" name="options" value="4">
-                      <span class="mdl-radio__label">Percent under 65 years</span>
-                    </label>
-                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-5">
-                      <input type="radio" onchange="over65Radio(this)" id="option-5" class="mdl-radio__button" name="options" value="5">
-                      <span class="mdl-radio__label">Percent over 65 years and older</span>
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+                        <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+                        <span class="mdl-checkbox__label">Other</span>
                     </label>
                 </div>
             <h5>Economy</h5>
-                 <div class="sideNavChecks">
-                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-12">
-                      <input type="radio" id="option-12" class="mdl-radio__button" name="options" value="12" checked>
-                      <span class="mdl-radio__label">Service Sales</span>
+                <div class="sideNavChecks">
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-3">
+                        <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
+                        <span class="mdl-checkbox__label">Tax Rate</span>
                     </label>
-                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-13">
-                      <input type="radio" id="option-13" class="mdl-radio__button" name="options" value="13">
-                      <span class="mdl-radio__label">Heath Care Revenue</span>
-                    </label>
-                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-14">
-                      <input type="radio" id="option-14" class="mdl-radio__button" name="options" value="14">
-                      <span class="mdl-radio__label">Wholesaler Sales</span>
-                    </label>
-                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-15">
-                      <input type="radio" id="option-15" class="mdl-radio__button" name="options" value="15">
-                      <span class="mdl-radio__label">Retail Sales</span>
-                    </label>
-                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-16">
-                      <input type="radio" id="option-16" class="mdl-radio__button" name="options" value="16">
-                      <span class="mdl-radio__label">Retail Sales per Capita</span>
+                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-4">
+                        <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input">
+                        <span class="mdl-checkbox__label">Other</span>
                     </label>
                 </div>
+            <div class="sideNavChecks">
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                    <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+                    <span class="mdl-radio__label">Population</span>
+                </label>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                    <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+                    <span class="mdl-radio__label">Percent under 5 years</span>
+                </label>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+                    <input type="radio" id="option-3" class="mdl-radio__button" name="options" value="3">
+                    <span class="mdl-radio__label">Percent under 18 years</span>
+                </label>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
+                    <input type="radio" id="option-4" class="mdl-radio__button" name="options" value="4">
+                    <span class="mdl-radio__label">Percent under 65 years</span>
+                </label>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-5">
+                    <input type="radio" id="option-5" class="mdl-radio__button" name="options" value="5">
+                    <span class="mdl-radio__label">Percent under 65 years and older</span>
+                </label>
+            </div>
             <h5>Housing (Median Values 2011-2015)</h5>
             <div class="sideNavChecks">
                 <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-6">
@@ -191,6 +188,29 @@
                 <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-11">
                     <input type="radio" id="option-11" class="mdl-radio__button" name="options" value="11">
                     <span class="mdl-radio__label">Gross rent</span>
+                </label>
+            </div>
+            <h5>Economy</h5>
+            <div class="sideNavChecks">
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-12">
+                    <input type="radio" id="option-12" class="mdl-radio__button" name="options" value="12" checked>
+                    <span class="mdl-radio__label">Service Sales</span>
+                </label>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-13">
+                    <input type="radio" id="option-13" class="mdl-radio__button" name="options" value="13">
+                    <span class="mdl-radio__label">Heath Care Revenue</span>
+                </label>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-14">
+                    <input type="radio" id="option-14" class="mdl-radio__button" name="options" value="14">
+                    <span class="mdl-radio__label">Wholesaler Sales</span>
+                </label>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-15">
+                    <input type="radio" id="option-15" class="mdl-radio__button" name="options" value="15">
+                    <span class="mdl-radio__label">Retail Sales</span>
+                </label>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-16">
+                    <input type="radio" id="option-16" class="mdl-radio__button" name="options" value="16">
+                    <span class="mdl-radio__label">Retail Sales per Capita</span>
                 </label>
             </div>
             <h5>Education</h5>
@@ -266,25 +286,12 @@
             <div class="flex-container">
                 <div id="map-card" class="mdl-card mdl-shadow--2dp"></div>
                 <script src="js/cityPolygons.js"></script>
-                <script src="js/jsGradient.js"></script>
                 <script src="js/parks.js"></script>
                 <script src="js/main.js"></script>
                 <script src="js/Schools.js"></script>
                 <script src="js/hospitals.js"></script>
-                <script src="js/demographics.js"></script>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn6Efi-lrZXCwx6ekjv--xksuIJEVCSkk&callback=initMap"></script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn6Efi-lrZXCwx6ekjv--xksuIJEVCSkk&callback=initMap&libraries=places"
                         async defer></script>
-<<<<<<< HEAD
-
-                        <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
-                        <div id="footer"></div>
-                        <script>
-                        // set the dimensions of the canvas
-                      var margin = {top: 20, right: 20, bottom: 70, left: 40},
-                          width = 600 - margin.left - margin.right,
-                          height = 300 - margin.top - margin.bottom;
-=======
                 <script src="http://d3js.org/d3.v3.min.js"></script>
                 <div id="footer"></div>
                 <script>
@@ -292,7 +299,6 @@
                     var margin = {top: 20, right: 20, bottom: 70, left: 40},
                         width = 600 - margin.left - margin.right,
                         height = 300 - margin.top - margin.bottom;
->>>>>>> master
 
 
                     // set the ranges

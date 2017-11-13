@@ -1,22 +1,25 @@
 [
 {
-	"Letter": "Kenowa Hills",
+	"name": "Kenowa Hills Highschool",
 	"Freq": 1
 },
 {
-	"Letter" : "Grandville",
+	"name" : "Grandville Highschool",
 	"Freq": 1
 },
 {
-	"Letter" : "Wyoming",
+	"name" : "Wyoming Highschool",
 	"Freq": 1
 },
 {
-	"Letter" : "Sparta",
+	"name" : "Sparta Highschools",
 	"Freq": 1
 },
 {
-  "Letter" : "Zeeland",
+  "name" : "Zeeland Highschools",
   "Freq" : 2
+},
+{
+	"Letter" : ""
 }
 ]

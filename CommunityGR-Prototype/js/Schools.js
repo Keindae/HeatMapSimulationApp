@@ -13,6 +13,7 @@ function setHighSchools(){
   michiganHighSchools.setStyle({
     visible: false
   });
+  setSchoolListeners();
 }
 
 function setPrivateHighSchools(){
@@ -59,3 +60,13 @@ function setNonPublicMiddleSchools(){
   });
   nonPublicMiddleSchools.setMap(googleMap);
 }
+
+function setSchoolListeners(){
+  var publicHighschoolsMarkers = new google.maps.InfoWindow();
+  publicHighschoolsMarkers.addListener('click', function (event) {
+      var myHTML = event.feature.getProperty("name");
+      publicHighschoolsMarkers.setContent("<div style='width:150px;'>" + myHTML + "</div>");
+      publicHighschoolsMarkers.setPosition(event.latLng);
+      publicHighschoolsMarkers.open(googleMap);
+    });
+  }

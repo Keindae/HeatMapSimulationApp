@@ -601,4 +601,3 @@ function createMarker(place) {
         infowindow.open(googleMap, this);
     });
 }
-

@@ -1,22 +1,27 @@
 [
 {
-	"Letter": "Kenowa Hills",
+	"Letter": "KHHS",
 	"Freq": 1
 },
 {
-	"Letter" : "Grandville",
+	"Letter" : "GHS",
 	"Freq": 1
 },
 {
-	"Letter" : "Wyoming",
+	"Letter" : "WHS",
 	"Freq": 1
 },
 {
-	"Letter" : "Sparta",
+	"Letter" : "SHS",
+	"Freq": 1
+},
+{
+	"Letter" : "EKHS",
 	"Freq": 1
 },
 {
   "Letter" : "Zeeland",
   "Freq" : 2
 }
+
 ]

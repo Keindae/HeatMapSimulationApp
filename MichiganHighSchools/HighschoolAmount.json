@@ -1,5 +1,6 @@
 [
 {
+
 	"name": "Kenowa Hills Highschool",
 	"Freq": 1
 },
@@ -13,13 +14,9 @@
 },
 {
 	"name" : "Sparta Highschools",
-	"Freq": 1
-},
+  "Freq" : 1
 {
   "name" : "Zeeland Highschools",
   "Freq" : 2
-},
-{
-	"Letter" : ""
 }
 ]

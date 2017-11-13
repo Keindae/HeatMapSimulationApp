@@ -1,23 +1,22 @@
 [
 {
-	"Letter": "KHHS",
-	"Freq": 1
-},
-{
-	"Letter" : "GHS",
-	"Freq": 1
-},
-{
-	"Letter" : "WHS",
-	"Freq": 1
-},
-{
-	"Letter" : "SHS",
-	"Freq": 1
-},
-{
-	"Letter" : "EKHS",
-	"Freq": 1
-}
 
+	"name": "Kenowa Hills Highschool",
+	"Freq": 1
+},
+{
+	"name" : "Grandville Highschool",
+	"Freq": 1
+},
+{
+	"name" : "Wyoming Highschool",
+	"Freq": 1
+},
+{
+	"name" : "Sparta Highschools",
+  "Freq" : 1
+{
+  "name" : "Zeeland Highschools",
+  "Freq" : 2
+}
 ]

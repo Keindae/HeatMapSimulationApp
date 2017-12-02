@@ -368,26 +368,172 @@
 
                 </script>
 
-                <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp Table-Format">
-                    <caption>Top School Districts</caption>
-                    <thead>
-                    <tr>
-                        <th>Rank</th>
-                        <th class="mdl-data-table__cell--non-numeric">Name</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td class="mdl-data-table__cell--non-numeric">Kenowa Hills</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td class="mdl-data-table__cell--non-numeric">Hudsonville</td>
-                    </tr>
-                    </tbody>
-                </table>
 
+                <!-- chart.js -->
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+
+
+                <canvas id="barChart" width="1000px" height="500px"></canvas>
+
+                <canvas id="lineChart" width="1000px" height="500px"></canvas>
+
+                <canvas id="pieChart" width="1000px" height="500px"></canvas>
+
+				<script>
+					var ctx = document.getElementById("barChart").getContext('2d');
+					var myChart = new Chart(ctx, {
+					    type: 'bar',
+					    data: {
+					        labels: ["Grand Rapids", "Wyoming", "Grandville", "Walker", "Kentwood", "Lowell", "Byron Center", "Rockford", "Caledonia", "Sparta"],
+					        datasets: [{
+					            label: 'Population',
+					            data: [188040, 72125, 15378, 23537, 48707, 5949, 5822, 5719, 12332, 9110],
+					            backgroundColor: [
+					                'rgba(255, 99, 132, 0.2)',
+					                'rgba(54, 162, 235, 0.2)',
+					                'rgba(255, 206, 86, 0.2)',
+					                'rgba(75, 192, 192, 0.2)',
+					                'rgba(153, 102, 255, 0.2)',
+					                'rgba(255, 159, 64, 0.2)',
+					                'rgba(255, 99, 132, 0.2)',
+					                'rgba(54, 162, 235, 0.2)',
+					                'rgba(255, 206, 86, 0.2)',
+					                'rgba(75, 192, 192, 0.2)'
+					            ],
+					            borderColor: [
+					                'rgba(255,99,132,1)',
+					                'rgba(54, 162, 235, 1)',
+					                'rgba(255, 206, 86, 1)',
+					                'rgba(75, 192, 192, 1)',
+					                'rgba(153, 102, 255, 1)',
+					                'rgba(255, 159, 64, 1)',
+					                'rgba(255,99,132,1)',
+					                'rgba(54, 162, 235, 1)',
+					                'rgba(255, 206, 86, 1)',
+					                'rgba(75, 192, 192, 1)'
+					            ],
+					            borderWidth: 1
+					        }]
+					    },
+					    options: {
+					        scales: {
+					            yAxes: [{
+					                ticks: {
+					                    beginAtZero:true
+					                }
+					            }]
+					        },
+					        responsive: false,
+					        title: {
+					            display: true,
+					            text: 'Population Bar Chart'
+					        }
+					    }
+					}
+
+					);
+					var cline = document.getElementById("lineChart").getContext('2d');
+					var line = new Chart(cline, {
+					    type: 'line',
+					    data: {
+					        labels: ["Grand Rapids", "Wyoming", "Grandville", "Walker", "Kentwood", "Lowell", "Byron Center", "Rockford", "Caledonia", "Sparta"],
+					        datasets: [{
+					            label: 'Population',
+					            borderColor:  'rgba(54, 162, 235, 1)',
+					            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+					            data: [188040, 72125, 15378, 23537, 48707, 5949, 5822, 5719, 12332, 9110],
+					            
+					        }]
+					    },
+					    options: {
+					         responsive: false,
+		                title:{
+		                    display:true,
+		                    text:'Population Line Chart'
+		                },
+		                tooltips: {
+		                    mode: 'index',
+		                    intersect: false,
+		                },
+		                hover: {
+		                    mode: 'nearest',
+		                    intersect: true
+		                },
+		                scales: {
+		                    xAxes: [{
+		                        display: true,
+		                        scaleLabel: {
+		                            display: true,
+		                            labelString: 'City'
+		                        }
+		                    }],
+		                    yAxes: [{
+		                        display: true,
+		                        scaleLabel: {
+		                            display: true,
+		                            labelString: 'Population'
+		                        }
+		                    }]
+					    }
+					}
+				}
+				);
+
+				var cpie = document.getElementById("pieChart").getContext('2d');
+					var myChart = new Chart(cpie, {
+					    type: 'doughnut',
+					    data: {
+					        labels: ["Grand Rapids", "Wyoming", "Grandville", "Walker", "Kentwood", "Lowell", "Byron Center", "Rockford", "Caledonia", "Sparta"],
+					        datasets: [{
+					            label: 'Population',
+					            data: [188040, 72125, 15378, 23537, 48707, 5949, 5822, 5719, 12332, 9110],
+					            backgroundColor: [
+					                'rgba(255, 99, 132, 0.2)',
+					                'rgba(54, 162, 235, 0.2)',
+					                'rgba(255, 206, 86, 0.2)',
+					                'rgba(75, 192, 192, 0.2)',
+					                'rgba(153, 102, 255, 0.2)',
+					                'rgba(255, 159, 64, 0.2)',
+					                'rgba(255, 99, 132, 0.2)',
+					                'rgba(54, 162, 235, 0.2)',
+					                'rgba(255, 206, 86, 0.2)',
+					                'rgba(75, 192, 192, 0.2)'
+					            ],
+					            borderColor: [
+					                'rgba(255,99,132,1)',
+					                'rgba(54, 162, 235, 1)',
+					                'rgba(255, 206, 86, 1)',
+					                'rgba(75, 192, 192, 1)',
+					                'rgba(153, 102, 255, 1)',
+					                'rgba(255, 159, 64, 1)',
+					                'rgba(255,99,132,1)',
+					                'rgba(54, 162, 235, 1)',
+					                'rgba(255, 206, 86, 1)',
+					                'rgba(75, 192, 192, 1)'
+					            ]
+					        }]
+					    },
+					    options: {
+					     	responsive: false,
+							legend: {
+							    position: 'top',
+							},
+							title: {
+							    display: true,
+							    text: 'Population Doughnut Chart'
+							},
+							animation: {
+							    animateScale: true,
+							    animateRotate: true
+							}
+					    }
+					}
+
+					);
+
+
+					
+				</script>
             </div>
         </div>
     </main>
@@ -406,6 +552,7 @@
     };
     firebase.initializeApp(config);
 </script>
+
 
 </body>
 </html>

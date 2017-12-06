@@ -150,7 +150,7 @@
             <h5>Economy</h5>
                  <div class="sideNavChecks">
                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-12">
-                      <input type="radio" id="option-12" class="mdl-radio__button" name="options" value="12" checked>
+                      <input type="radio" onchange="setServices()" id="option-12" class="mdl-radio__button" name="options" value="12">
                       <span class="mdl-radio__label">Service Sales</span>
                     </label>
                     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-13">
@@ -271,8 +271,10 @@
                 <script src="js/main.js"></script>
                 <script src="js/Schools.js"></script>
                 <script src="js/hospitals.js"></script>
+								<script src="js/economy.js"></script>
                 <script src="js/demographics.js"></script>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn6Efi-lrZXCwx6ekjv--xksuIJEVCSkk&callback=initMap"></script>
+								
+                <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn6Efi-lrZXCwx6ekjv--xksuIJEVCSkk&callback=initMap"></script> -->
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCn6Efi-lrZXCwx6ekjv--xksuIJEVCSkk&callback=initMap&libraries=places"
                         async defer></script>
 

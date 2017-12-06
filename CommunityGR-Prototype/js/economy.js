@@ -1,4 +1,4 @@
-var jsonText = '{"kentwood": { "serviceSales":"117194", "servicePercent":"13", "healthCareSales":"509522", "healthCarePercent":"12", "manufacturingSales":"2414552", "manufacturingPercent": "18",  "wholesaleerSales":"1345761", "wholesalePercent":"11", "retailSales":"894947", "retailSalesPercent":"15", "retailSalesPerCapita":"18009", "retailPercent":""}, "grandRapids": { "serviceSales":"448575", "servicePercent":"49", "healthCareSales":"3152436", "healthCarePercent":"73", "manufacturingSales":"7029490", "manufacturingPercent": "53",  "wholesaleerSales":"4778902", "wholesalePercent":"40",  "retailSales":"1672643", "retailSalesPercent":"28", "retailSalesPerCapita":"8784", "retailPercent":""}, "wyoming": { "serviceSales":"99688", "servicePercent":"11", "healthCareSales":"430834", "healthCarePercent":"10", "manufacturingSales":"1682627", "manufacturingPercent": "13",  "wholesaleerSales":"3082980", "wholesalePercent":"26",  "retailSales":"1114227", "retailSalesPercent":"19", "retailSalesPerCapita":"15186", "retailPercent":""}, "grandville": { "serviceSales":"86257", "servicePercent":"10", "healthCareSales":"", "healthCarePercent":"", "manufacturingSales":"374569", "manufacturingPercent": "3",  "wholesaleerSales":"389605", "wholesalePercent":"3",  "retailSales":"792200", "retailSalesPercent":"13", "retailSalesPerCapita":"50795", "retailPercent":""}, "walker": { "serviceSales":"83243", "servicePercent":"9", "healthCareSales":"111681", "healthCarePercent":"3", "manufacturingSales":"1139547", "manufacturingPercent": "9",  "wholesaleerSales":"1443402", "wholesalePercent":"12",  "retailSales":"798188", "retailSalesPercent":"13", "retailSalesPerCapita":"33,254", "retailPercent":""}, "sparta": { "serviceSales":"", "servicePercent":"", "healthCareSales":"", "healthCarePercent":"", "manufacturingSales":"", "manufacturingPercent": "",  "wholesaleerSales":"", "wholesalePercent":"",  "retailSales":"", "retailSalesPercent":"", "retailSalesPerCapita":"", "retailPercent":""}, "rockford": { "serviceSales":"18985", "servicePercent":"2", "healthCareSales":"27139", "healthCarePercent":"1", "manufacturingSales":"247367", "manufacturingPercent": "2",  "wholesaleerSales":"", "wholesalePercent":"",  "retailSales":"46226", "retailSalesPercent":"1", "retailSalesPerCapita":"7,899", "retailPercent":""}, "lowell": { "serviceSales":"", "servicePercent":"", "healthCareSales":"7784", "healthCarePercent":"1", "manufacturingSales":"", "manufacturingPercent": "",  "wholesaleerSales":"", "wholesalePercent":"",  "retailSales":"115374", "retailSalesPercent":"2", "retailSalesPerCapita":"18,849", "retailPercent":""}, "caledonia": { "serviceSales":"24343", "servicePercent":"3", "healthCareSales":"", "healthCarePercent":"", "manufacturingSales":"136098", "manufacturingPercent": "1",  "wholesaleerSales":"173156", "wholesalePercent":"1",  "retailSales":"240359", "retailSalesPercent":"4", "retailSalesPerCapita":"18837", "retailPercent":""}, "byronCenter": { "serviceSales":"28091", "servicePercent":"3", "healthCareSales":"56605", "healthCarePercent":"1", "manufacturingSales":"246604", "manufacturingPercent": "2",  "wholesaleerSales":"780894", "wholesalePercent":"7",  "retailSales":"259420", "retailSalesPercent":"4", "retailSalesPerCapita":"12338", "retailPercent":""}, "comstock": { "serviceSales":"", "servicePercent":"", "healthCareSales":"", "healthCarePercent":"", "manufacturingSales":"", "manufacturingPercent": "",  "wholesaleerSales":"", "wholesalePercent":"",  "retailSales":"", "retailSalesPercent":"", "retailSalesPerCapita":"", "retailPercent":""}}';
+var jsonText = '{"kentwood": { "serviceSales":"117194", "servicePercent":"13", "healthCareSales":"509522", "healthCarePercent":"12", "manufacturingSales":"2414552", "manufacturingPercent": "18",  "wholesaleerSales":"1345761", "wholesalePercent":"11", "retailSales":"894947", "retailSalesPercent":"15", "retailSalesPerCapita":"18009", "retailPercent":"10"}, "grandRapids": { "serviceSales":"448575", "servicePercent":"49", "healthCareSales":"3152436", "healthCarePercent":"73", "manufacturingSales":"7029490", "manufacturingPercent": "53",  "wholesaleerSales":"4778902", "wholesalePercent":"40",  "retailSales":"1672643", "retailSalesPercent":"28", "retailSalesPerCapita":"8784", "retailPercent":"5"}, "wyoming": { "serviceSales":"99688", "servicePercent":"11", "healthCareSales":"430834", "healthCarePercent":"10", "manufacturingSales":"1682627", "manufacturingPercent": "13",  "wholesaleerSales":"3082980", "wholesalePercent":"26",  "retailSales":"1114227", "retailSalesPercent":"19", "retailSalesPerCapita":"15186", "retailPercent":"8"}, "grandville": { "serviceSales":"86257", "servicePercent":"10", "healthCareSales":"", "healthCarePercent":"", "manufacturingSales":"374569", "manufacturingPercent": "3",  "wholesaleerSales":"389605", "wholesalePercent":"3",  "retailSales":"792200", "retailSalesPercent":"13", "retailSalesPerCapita":"50795", "retailPercent":"27"}, "walker": { "serviceSales":"83243", "servicePercent":"9", "healthCareSales":"111681", "healthCarePercent":"3", "manufacturingSales":"1139547", "manufacturingPercent": "9",  "wholesaleerSales":"1443402", "wholesalePercent":"12",  "retailSales":"798188", "retailSalesPercent":"13", "retailSalesPerCapita":"33,254", "retailPercent":"17"}, "sparta": { "serviceSales":"", "servicePercent":"", "healthCareSales":"", "healthCarePercent":"", "manufacturingSales":"", "manufacturingPercent": "",  "wholesaleerSales":"", "wholesalePercent":"",  "retailSales":"", "retailSalesPercent":"", "retailSalesPerCapita":"", "retailPercent":"1"}, "rockford": { "serviceSales":"18985", "servicePercent":"2", "healthCareSales":"27139", "healthCarePercent":"1", "manufacturingSales":"247367", "manufacturingPercent": "2",  "wholesaleerSales":"", "wholesalePercent":"",  "retailSales":"46226", "retailSalesPercent":"1", "retailSalesPerCapita":"7,899", "retailPercent":"4"}, "lowell": { "serviceSales":"", "servicePercent":"", "healthCareSales":"7784", "healthCarePercent":"1", "manufacturingSales":"", "manufacturingPercent": "",  "wholesaleerSales":"", "wholesalePercent":"",  "retailSales":"115374", "retailSalesPercent":"2", "retailSalesPerCapita":"18,849", "retailPercent":"10"}, "caledonia": { "serviceSales":"24343", "servicePercent":"3", "healthCareSales":"", "healthCarePercent":"", "manufacturingSales":"136098", "manufacturingPercent": "1",  "wholesaleerSales":"173156", "wholesalePercent":"1",  "retailSales":"240359", "retailSalesPercent":"4", "retailSalesPerCapita":"18837", "retailPercent":"10"}, "byronCenter": { "serviceSales":"28091", "servicePercent":"3", "healthCareSales":"56605", "healthCarePercent":"1", "manufacturingSales":"246604", "manufacturingPercent": "2",  "wholesaleerSales":"780894", "wholesalePercent":"7",  "retailSales":"259420", "retailSalesPercent":"4", "retailSalesPerCapita":"12338", "retailPercent":"7"}, "comstock": { "serviceSales":"", "servicePercent":"", "healthCareSales":"", "healthCarePercent":"", "manufacturingSales":"", "manufacturingPercent": "",  "wholesaleerSales":"", "wholesalePercent":"",  "retailSales":"", "retailSalesPercent":"", "retailSalesPerCapita":"", "retailPercent":""}}';
 
 var citysEcon = JSON.parse(jsonText);
 
@@ -80,7 +80,7 @@ function setSpartaColor(hex){
 
 function setServices(){
 
-	grandRapidsInfoWindow.setContent(citysEcon.grandRapids.serviceSales + " $1000");
+	grandRapidsInfoWindow.setContent(citysEcon.grandRapids.serviceSales + " ($1000)");
 	setGrandRapidsColor(gradArray[citysEcon.grandRapids.servicePercent]);
 
 	wyomingInfoWindow.setContent(citysEcon.wyoming.serviceSales + " ($1000)");
@@ -118,153 +118,176 @@ function setServices(){
 }
 
 function setHealthCareRevenue(){
-	grandRapidsInfoWindow.setContent(citys.grandRapids.under5 + "%");
-	setGrandRapidsColor(gradArray[citys.grandRapids.under5]);
+	grandRapidsInfoWindow.setContent(citysEcon.grandRapids.healthCareSales + " $1000");
+	setGrandRapidsColor(gradArray[citysEcon.grandRapids.healthCarePercent]);
 
-	wyomingInfoWindow.setContent(citys.wyoming.under5 + "%");
-	setWyomingColor(gradArray[citys.wyoming.under5]);
+	wyomingInfoWindow.setContent(citysEcon.wyoming.healthCareSales + " ($1000)");
+	setWyomingColor(gradArray[citysEcon.wyoming.healthCarePercent]);
 
-	grandvilleInfoWindow.setContent(citys.grandville.under5 + "%");
-	setGrandvilleColor(gradArray[citys.grandville.under5]);
+	grandvilleInfoWindow.setContent(citysEcon.grandville.healthCareSales + " ($1000)");
+	setGrandvilleColor(gradArray[citysEcon.grandville.healthCarePercent]);
 
-	walkerInfoWindow.setContent(citys.walker.under5 + "%");
-	setWalkerColor(gradArray[citys.walker.under5]);
+	walkerInfoWindow.setContent(citysEcon.walker.healthCareSales + " ($1000)");
+	setWalkerColor(gradArray[citysEcon.walker.healthCarePercent]);
 
-	kentwoodInfoWindow.setContent(citys.kentwood.under5 + "%");
-	setKentwoodColor(gradArray[citys.kentwood.under5]);
+	kentwoodInfoWindow.setContent(citysEcon.kentwood.healthCareSales + " ($1000)");
+	setKentwoodColor(gradArray[citysEcon.kentwood.healthCarePercent]);
 
-	lowellInfoWindow.setContent(citys.lowell.under5 + "%");
-	setLowellColor(gradArray[citys.lowell.under5]);
+	lowellInfoWindow.setContent(citysEcon.lowell.healthCareSales + " ($1000)");
+	setLowellColor(gradArray[citys.lowell.healthCarePercent]);
 
-	byronCenterInfoWindow.setContent(citys.byronCenter.under5 + "%");
-	setByronCenterColor(gradArray[citys.byronCenter.under5]);
+	byronCenterInfoWindow.setContent(citysEcon.byronCenter.healthCareSales + " ($1000)");
+	setByronCenterColor(gradArray[citysEcon.byronCenter.healthCarePercent]);
 
-	comstockInfoWindow.setContent(citys.comstock.under5 + "%");
-	setComstockColor(gradArray[citys.comstock.under5]);
+	comstockInfoWindow.setContent(citys.comstock.healthCareSales + " ($1000)");
+	setComstockColor(gradArray[citys.comstock.healthCarePercent]);
 
-	rockfordInfoWindow.setContent(citys.rockford.under5 + "%");
-	setRockfordColor(gradArray[citys.rockford.under5]);
+	rockfordInfoWindow.setContent(citysEcon.rockford.healthCareSales + " ($1000)");
+	setRockfordColor(gradArray[citysEcon.rockford.healthCarePercent]);
 
-	//grandRapidsInfoWindow.setContent(citys.grandRapids.population);
-	//setCedarSpringsColor(gradArray[citys.]);
+	caledoniaInfoWindow.setContent(citysEcon.caledonia.healthCareSales + " ($1000)");
+	setCaledoniaColor(gradArray[citysEcon.caledonia.healthCarePercent]);
 
-	caledoniaInfoWindow.setContent(citys.caledonia.under5 + "%");
-	setCaledoniaColor(gradArray[citys.caledonia.under5]);
-
-	spartaInfoWindow.setContent(citys.sparta.under5 + "%");
-	setSpartaColor(gradArray[citys.sparta.under5]);
+	spartaInfoWindow.setContent(citys.sparta.healthCareSales + " ($1000)");
+	setSpartaColor(gradArray[citys.sparta.healthCarePercent]);
 }
 
 function setManufacturingSales(){
-	grandRapidsInfoWindow.setContent(citys.grandRapids.under18 + "%");
-	setGrandRapidsColor(gradArray[citys.grandRapids.under18]);
+	grandRapidsInfoWindow.setContent(citysEcon.grandRapids.manufacturingSales + " ($1000)");
+	setGrandRapidsColor(gradArray[citysEcon.grandRapids.manufacturingPercent]);
 
-	wyomingInfoWindow.setContent(citys.wyoming.under18 + "%");
-	setWyomingColor(gradArray[citys.wyoming.under18]);
+	wyomingInfoWindow.setContent(citysEcon.wyoming.manufacturingSales + " ($1000)");
+	setWyomingColor(gradArray[citysEcon.wyoming.manufacturingPercent]);
 
-	grandvilleInfoWindow.setContent(citys.grandville.under18 + "%");
-	setGrandvilleColor(gradArray[citys.grandville.under18]);
+	grandvilleInfoWindow.setContent(citysEcon.grandville.manufacturingSales + " ($1000)");
+	setGrandvilleColor(gradArray[citysEcon.grandville.manufacturingPercent]);
 
-	walkerInfoWindow.setContent(citys.walker.under18 + "%");
-	setWalkerColor(gradArray[citys.walker.under18]);
+	walkerInfoWindow.setContent(citysEcon.walker.manufacturingSales + " ($1000)");
+	setWalkerColor(gradArray[citysEcon.walker.manufacturingPercent]);
 
-	kentwoodInfoWindow.setContent(citys.kentwood.under18 + "%");
-	setKentwoodColor(gradArray[citys.kentwood.under18]);
+	kentwoodInfoWindow.setContent(citysEcon.kentwood.manufacturingSales + " ($1000)");
+	setKentwoodColor(gradArray[citysEcon.kentwood.manufacturingPercent]);
 
-	lowellInfoWindow.setContent(citys.lowell.under18 + "%");
-	setLowellColor(gradArray[citys.lowell.under18]);
+	lowellInfoWindow.setContent(citysEcon.lowell.manufacturingSales + " ($1000)");
+	setLowellColor(gradArray[citys.lowell.manufacturingPercent]);
 
-	byronCenterInfoWindow.setContent(citys.byronCenter.under18 + "%");
-	setByronCenterColor(gradArray[citys.byronCenter.under18]);
+	byronCenterInfoWindow.setContent(citysEcon.byronCenter.manufacturingSales + " ($1000)");
+	setByronCenterColor(gradArray[citysEcon.byronCenter.manufacturingPercent]);
 
-	comstockInfoWindow.setContent(citys.comstock.under18 + "%");
-	setComstockColor(gradArray[citys.comstock.under18]);
+	comstockInfoWindow.setContent(citys.comstock.manufacturingSales + " ($1000)");
+	setComstockColor(gradArray[citys.comstock.manufacturingPercent]);
 
-	rockfordInfoWindow.setContent(citys.rockford.under18 + "%");
-	setRockfordColor(gradArray[citys.rockford.under18]);
+	rockfordInfoWindow.setContent(citysEcon.rockford.manufacturingSales + " ($1000)");
+	setRockfordColor(gradArray[citysEcon.rockford.manufacturingPercent]);
 
-	//grandRapidsInfoWindow.setContent(citys.grandRapids.population);
-	//setCedarSpringsColor(gradArray[citys.]);
+	caledoniaInfoWindow.setContent(citysEcon.caledonia.manufacturingSales + " ($1000)");
+	setCaledoniaColor(gradArray[citysEcon.caledonia.manufacturingPercent]);
 
-	caledoniaInfoWindow.setContent(citys.caledonia.under18 + "%");
-	setCaledoniaColor(gradArray[citys.caledonia.under18]);
-
-	spartaInfoWindow.setContent(citys.sparta.under18 + "%");
-	setSpartaColor(gradArray[citys.sparta.under18]);
+	spartaInfoWindow.setContent(citys.sparta.manufacturingSales + " ($1000)");
+	setSpartaColor(gradArray[citys.sparta.manufacturingPercent]);
 }
 
 function setWholesale(){
-	grandRapidsInfoWindow.setContent(citys.grandRapids.under65 + "%");
-	setGrandRapidsColor(gradArray[citys.grandRapids.under65]);
+	grandRapidsInfoWindow.setContent(citysEcon.grandRapids.wholesaleerSales + " ($1000)");
+	setGrandRapidsColor(gradArray[citysEcon.grandRapids.wholesalePercent]);
 
-	wyomingInfoWindow.setContent(citys.wyoming.under65 + "%");
-	setWyomingColor(gradArray[citys.wyoming.under65]);
+	wyomingInfoWindow.setContent(citysEcon.wyoming.wholesaleerSales + " ($1000)");
+	setWyomingColor(gradArray[citysEcon.wyoming.wholesalePercent]);
 
-	grandvilleInfoWindow.setContent(citys.grandville.under65 + "%");
-	setGrandvilleColor(gradArray[citys.grandville.under65]);
+	grandvilleInfoWindow.setContent(citysEcon.grandville.wholesaleerSales + " ($1000)");
+	setGrandvilleColor(gradArray[citysEcon.grandville.wholesalePercent]);
 
-	walkerInfoWindow.setContent(citys.walker.under65 + "%");
-	setWalkerColor(gradArray[citys.walker.under65]);
+	walkerInfoWindow.setContent(citysEcon.walker.wholesaleerSales + " ($1000)");
+	setWalkerColor(gradArray[citysEcon.walker.wholesalePercent]);
 
-	kentwoodInfoWindow.setContent(citys.kentwood.under65 + "%");
-	setKentwoodColor(gradArray[citys.kentwood.under65]);
+	kentwoodInfoWindow.setContent(citysEcon.kentwood.wholesaleerSales + " ($1000)");
+	setKentwoodColor(gradArray[citysEcon.kentwood.wholesalePercent]);
 
-	lowellInfoWindow.setContent(citys.lowell.under65 + "%");
-	setLowellColor(gradArray[citys.lowell.under65]);
+	lowellInfoWindow.setContent(citysEcon.lowell.wholesaleerSales + " ($1000)");
+	setLowellColor(gradArray[citys.lowell.wholesalePercent]);
 
-	byronCenterInfoWindow.setContent(citys.byronCenter.under65 + "%");
-	setByronCenterColor(gradArray[citys.byronCenter.under65]);
+	byronCenterInfoWindow.setContent(citysEcon.byronCenter.wholesaleerSales + " ($1000)");
+	setByronCenterColor(gradArray[citysEcon.byronCenter.wholesalePercent]);
 
-	comstockInfoWindow.setContent(citys.comstock.under65 + "%");
-	setComstockColor(gradArray[citys.comstock.under65]);
+	comstockInfoWindow.setContent(citys.comstock.wholesaleerSales + " ($1000)");
+	setComstockColor(gradArray[citys.comstock.wholesalePercent]);
 
-	rockfordInfoWindow.setContent(citys.rockford.under65 + "%");
-	setRockfordColor(gradArray[citys.rockford.under65]);
+	rockfordInfoWindow.setContent(citysEcon.rockford.wholesaleerSales + " ($1000)");
+	setRockfordColor(gradArray[citysEcon.rockford.wholesalePercent]);
 
-	//grandRapidsInfoWindow.setContent(citys.grandRapids.population);
-	//setCedarSpringsColor(gradArray[citys.]);
+	caledoniaInfoWindow.setContent(citysEcon.caledonia.wholesaleerSales + " ($1000)");
+	setCaledoniaColor(gradArray[citysEcon.caledonia.wholesalePercent]);
 
-	caledoniaInfoWindow.setContent(citys.caledonia.under65 + "%");
-	setCaledoniaColor(gradArray[citys.caledonia.under65]);
-
-	spartaInfoWindow.setContent(citys.sparta.under65 + "%");
-	setSpartaColor(gradArray[citys.sparta.under65]);
+	spartaInfoWindow.setContent(citys.sparta.wholesaleerSales + " ($1000)");
+	setSpartaColor(gradArray[citys.sparta.wholesalePercent]);
 }
 
 function setRetail(){
-	grandRapidsInfoWindow.setContent(citys.grandRapids.over65 + "%");
-	setGrandRapidsColor(gradArray[citys.grandRapids.over65]);
+	grandRapidsInfoWindow.setContent(citysEcon.grandRapids.retailSales + " ($1000)");
+	setGrandRapidsColor(gradArray[citysEcon.grandRapids.retailSalesPercent]);
 
-	wyomingInfoWindow.setContent(citys.wyoming.over65 + "%");
-	setWyomingColor(gradArray[citys.wyoming.over65]);
+	wyomingInfoWindow.setContent(citysEcon.wyoming.retailSales + " ($1000)");
+	setWyomingColor(gradArray[citysEcon.wyoming.retailSalesPercent]);
 
-	grandvilleInfoWindow.setContent(citys.grandville.over65 + "%");
-	setGrandvilleColor(gradArray[citys.grandville.over65]);
+	grandvilleInfoWindow.setContent(citysEcon.grandville.retailSales + " ($1000)");
+	setGrandvilleColor(gradArray[citysEcon.grandville.retailSalesPercent]);
 
-	walkerInfoWindow.setContent(citys.walker.over65 + "%");
-	setWalkerColor(gradArray[citys.walker.over65]);
+	walkerInfoWindow.setContent(citysEcon.walker.retailSales + " ($1000)");
+	setWalkerColor(gradArray[citysEcon.walker.retailSalesPercent]);
 
-	kentwoodInfoWindow.setContent(citys.kentwood.over65 + "%");
-	setKentwoodColor(gradArray[citys.kentwood.over65]);
+	kentwoodInfoWindow.setContent(citysEcon.kentwood.retailSales + " ($1000)");
+	setKentwoodColor(gradArray[citysEcon.kentwood.retailSalesPercent]);
 
-	lowellInfoWindow.setContent(citys.lowell.over65 + "%");
-	setLowellColor(gradArray[citys.lowell.over65]);
+	lowellInfoWindow.setContent(citysEcon.lowell.retailSales + " ($1000)");
+	setLowellColor(gradArray[citys.lowell.retailSalesPercent]);
 
-	byronCenterInfoWindow.setContent(citys.byronCenter.over65 + "%");
-	setByronCenterColor(gradArray[citys.byronCenter.over65]);
+	byronCenterInfoWindow.setContent(citysEcon.byronCenter.retailSales + " ($1000)");
+	setByronCenterColor(gradArray[citysEcon.byronCenter.retailSalesPercent]);
 
-	comstockInfoWindow.setContent(citys.comstock.over65 + "%");
-	setComstockColor(gradArray[citys.comstock.over65]);
+	comstockInfoWindow.setContent(citys.comstock.retailSales + " ($1000)");
+	setComstockColor(gradArray[citys.comstock.retailSalesPercent]);
 
-	rockfordInfoWindow.setContent(citys.rockford.over65 + "%");
-	setRockfordColor(gradArray[citys.rockford.over65]);
+	rockfordInfoWindow.setContent(citysEcon.rockford.retailSales + " ($1000)");
+	setRockfordColor(gradArray[citysEcon.rockford.retailSalesPercent]);
 
-	//grandRapidsInfoWindow.setContent(citys.grandRapids.population);
-	//setCedarSpringsColor(gradArray[citys.]);
+	caledoniaInfoWindow.setContent(citysEcon.caledonia.retailSales + " ($1000)");
+	setCaledoniaColor(gradArray[citysEcon.caledonia.retailSalesPercent]);
 
-	caledoniaInfoWindow.setContent(citys.caledonia.over65 + "%");
-	setCaledoniaColor(gradArray[citys.caledonia.over65]);
+	spartaInfoWindow.setContent(citys.sparta.retailSales + " ($1000)");
+	setSpartaColor(gradArray[citys.sparta.retailSalesPercent]);
+}
 
-	spartaInfoWindow.setContent(citys.sparta.over65 + "%");
-	setSpartaColor(gradArray[citys.sparta.over65]);
+function setRetailPerCapita(){
+	grandRapidsInfoWindow.setContent(citysEcon.grandRapids.retailSalesPerCapita + " ($1000)");
+	setGrandRapidsColor(gradArray[citysEcon.grandRapids.retailPercent]);
+
+	wyomingInfoWindow.setContent(citysEcon.wyoming.retailSalesPerCapita + " ($1000)");
+	setWyomingColor(gradArray[citysEcon.wyoming.retailPercent]);
+
+	grandvilleInfoWindow.setContent(citysEcon.grandville.retailSalesPerCapita + " ($1000)");
+	setGrandvilleColor(gradArray[citysEcon.grandville.retailPercent]);
+
+	walkerInfoWindow.setContent(citysEcon.walker.retailSalesPerCapita + " ($1000)");
+	setWalkerColor(gradArray[citysEcon.walker.retailPercent]);
+
+	kentwoodInfoWindow.setContent(citysEcon.kentwood.retailSalesPerCapita + " ($1000)");
+	setKentwoodColor(gradArray[citysEcon.kentwood.retailPercent]);
+
+	lowellInfoWindow.setContent(citysEcon.lowell.retailSalesPerCapita + " ($1000)");
+	setLowellColor(gradArray[citys.lowell.retailPercent]);
+
+	byronCenterInfoWindow.setContent(citysEcon.byronCenter.retailSalesPerCapita + " ($1000)");
+	setByronCenterColor(gradArray[citysEcon.byronCenter.retailPercent]);
+
+	comstockInfoWindow.setContent(citys.comstock.retailSalesPerCapita + " ($1000)");
+	setComstockColor(gradArray[citys.comstock.retailPercent]);
+
+	rockfordInfoWindow.setContent(citysEcon.rockford.retailSalesPerCapita + " ($1000)");
+	setRockfordColor(gradArray[citysEcon.rockford.retailPercent]);
+
+	caledoniaInfoWindow.setContent(citysEcon.caledonia.retailSalesPerCapita + " ($1000)");
+	setCaledoniaColor(gradArray[citysEcon.caledonia.retailPercent]);
+
+	spartaInfoWindow.setContent(citys.sparta.retailSalesPerCapita + " ($1000)");
+	setSpartaColor(gradArray[citys.sparta.retailPercent]);
 }

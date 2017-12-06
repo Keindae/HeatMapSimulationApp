@@ -3,6 +3,7 @@ var googleMap;
 var marker;
 var infowindow;
 var polygonMap = new Map();
+var boundsMap = new Map();
 var grandRapidsFoodMarkers = [];
 
 function initMap() {
@@ -198,16 +199,18 @@ function publicElementarySchoolsCheckBox(checkbox) {
  */
 function grandRapidsCheckBox(event) {
     if (event.checked) {
-        grandRapidsData.forEach(function (feature) {
-            processPoints(feature.getGeometry(), bounds.extend, bounds);
-            googleMap.fitBounds(bounds);
-        });
+        boundsMap.set("grandRapids", grandRapidsData);
+        setBounds();
+
         grandRapidsData.setStyle({
             fillColor: 'red',
             visible: true
         });
     }
     else {
+        boundsMap.delete("grandRapids");
+        setBounds();
+
         grandRapidsData.setStyle({
             visible: false
         });
@@ -216,16 +219,18 @@ function grandRapidsCheckBox(event) {
 
 function wyomingCheckbox(event) {
     if (event.checked) {
-        wyomingData.forEach(function (feature) {
-            processPoints(feature.getGeometry(), bounds.extend, bounds);
-            googleMap.fitBounds(bounds);
-        });
+        boundsMap.set("wyoming", wyomingData);
+        setBounds();
+
         wyomingData.setStyle({
             fillColor: 'blue',
             visible: true
         });
     }
     else {
+        boundsMap.delete("wyoming");
+        setBounds();
+
         wyomingData.setStyle({
             visible: false
         });
@@ -234,16 +239,18 @@ function wyomingCheckbox(event) {
 
 function grandvilleCheckbox(event) {
     if (event.checked) {
-        grandvilleData.forEach(function(feature){
-            processPoints(feature.getGeometry(), bounds.extend, bounds);
-            googleMap.fitBounds(bounds);
-        });
+        boundsMap.set("grandville", grandvilleData);
+        setBounds();
+
         grandvilleData.setStyle({
             fillColor: 'cyan',
             visible: true
         });
     }
     else {
+        boundsMap.delete("grandville");
+        setBounds();
+
         grandvilleData.setStyle({
             visible: false
         });
@@ -252,16 +259,18 @@ function grandvilleCheckbox(event) {
 
 function walkerCheckbox(event) {
     if (event.checked) {
-        walkerData.forEach(function(feature){
-            processPoints(feature.getGeometry(), bounds.extend, bounds);
-            googleMap.fitBounds(bounds);
-        });
+        boundsMap.set("walker", walkerData);
+        setBounds();
+
         walkerData.setStyle({
             fillColor: 'navy',
             visible: true
         });
     }
     else {
+        boundsMap.delete("walker");
+        setBounds();
+
         walkerData.setStyle({
             visible: false
         });
@@ -270,16 +279,18 @@ function walkerCheckbox(event) {
 
 function kentwoodCheckbox(event) {
     if (event.checked) {
-        kentwoodData.forEach(function(feature){
-            processPoints(feature.getGeometry(), bounds.extend, bounds);
-            googleMap.fitBounds(bounds);
-        });
+        boundsMap.set("kentwood", kentwoodData);
+        setBounds();
+
         kentwoodData.setStyle({
             fillColor: 'teal',
             visible: true
         });
     }
     else {
+        boundsMap.delete("kentwood");
+        setBounds();
+
         kentwoodData.setStyle({
             visible: false
         });
@@ -288,16 +299,18 @@ function kentwoodCheckbox(event) {
 
 function lowellCheckbox(event) {
     if (event.checked) {
-        lowellData.forEach(function(feature){
-            processPoints(feature.getGeometry(), bounds.extend, bounds);
-            googleMap.fitBounds(bounds);
-        });
+        boundsMap.set("lowell", lowellData);
+        setBounds();
+
         lowellData.setStyle({
             fillColor: 'magenta',
             visible: true
         });
     }
     else {
+        boundsMap.delete("lowell");
+        setBounds();
+
         lowellData.setStyle({
             visible: false
         });
@@ -306,16 +319,18 @@ function lowellCheckbox(event) {
 
 function byronCenterCheckbox(event) {
     if (event.checked) {
-        byronCenterData.forEach(function(feature){
-            processPoints(feature.getGeometry(), bounds.extend, bounds);
-            googleMap.fitBounds(bounds);
-        });
+        boundsMap.set("byronCenter", byronCenterData);
+        setBounds();
+
         byronCenterData.setStyle({
             fillColor: 'yellow',
             visible: true
         });
     }
     else {
+        boundsMap.delete("byronCenter");
+        setBounds();
+
         byronCenterData.setStyle({
             visible: false
         });
@@ -324,16 +339,18 @@ function byronCenterCheckbox(event) {
 
 function comstockCheckbox(event) {
     if (event.checked) {
-        comstockData.forEach(function(feature){
-            processPoints(feature.getGeometry(), bounds.extend, bounds);
-            googleMap.fitBounds(bounds);
-        });
+        boundsMap.set("comstock", comstockData);
+        setBounds();
+
         comstockData.setStyle({
             fillColor: 'orange',
             visible: true
         });
     }
     else {
+        boundsMap.delete("comstock");
+        setBounds();
+
         comstockData.setStyle({
             visible: false
         });
@@ -342,16 +359,18 @@ function comstockCheckbox(event) {
 
 function rockfordCheckbox(event) {
     if (event.checked) {
-        rockfordData.forEach(function(feature){
-            processPoints(feature.getGeometry(), bounds.extend, bounds);
-            googleMap.fitBounds(bounds);
-        });
+        boundsMap.set("rockford", rockfordData);
+        setBounds();
+
         rockfordData.setStyle({
             fillColor: 'purple',
             visible: true
         });
     }
     else {
+        boundsMap.delete("rockford");
+        setBounds();
+
         rockfordData.setStyle({
             visible: false
         });
@@ -360,16 +379,18 @@ function rockfordCheckbox(event) {
 
 function cedarSpringsCheckbox(event) {
     if (event.checked) {
-        cedarSpringsData.forEach(function(feature){
-            processPoints(feature.getGeometry(), bounds.extend, bounds);
-            googleMap.fitBounds(bounds);
-        });
+        boundsMap.set("cedarSprings", cedarSpringsData);
+        setBounds();
+
         cedarSpringsData.setStyle({
             fillColor: 'blue',
             visible: true
         });
     }
     else {
+        boundsMap.delete("cedarSprings");
+        setBounds();
+
         cedarSpringsData.setStyle({
             visible: false
         });
@@ -378,16 +399,18 @@ function cedarSpringsCheckbox(event) {
 
 function caledoniaCheckbox(event) {
     if (event.checked) {
-        caledoniaData.forEach(function(feature){
-            processPoints(feature.getGeometry(), bounds.extend, bounds);
-            googleMap.fitBounds(bounds);
-        });
+        boundsMap.set("caledonia", caledoniaData);
+        setBounds();
+
         caledoniaData.setStyle({
             fillColor: 'green',
             visible: true
         });
     }
     else {
+        boundsMap.delete("caledonia");
+        setBounds();
+
         caledoniaData.setStyle({
             visible: false
         });
@@ -396,16 +419,18 @@ function caledoniaCheckbox(event) {
 
 function spartaCheckbox(event) {
     if (event.checked) {
-        spartaData.forEach(function(feature){
-            processPoints(feature.getGeometry(), bounds.extend, bounds);
-            googleMap.fitBounds(bounds);
-        });
+        boundsMap.set("sparta", spartaData);
+        setBounds();
+
         spartaData.setStyle({
             fillColor: 'red',
             visible: true
         });
     }
     else {
+        boundsMap.delete("sparta");
+        setBounds();
+
         spartaData.setStyle({
             visible: false
         });
@@ -599,5 +624,16 @@ function createMarker(place) {
     google.maps.event.addListener(marker, 'click', function () {
         infowindow.setContent(place.name);
         infowindow.open(googleMap, this);
+    });
+}
+
+function setBounds() {
+    bounds = new google.maps.LatLngBounds();
+
+    boundsMap.forEach(function (value, key) {
+        value.forEach(function (feature) {
+            processPoints(feature.getGeometry(), bounds.extend, bounds);
+            googleMap.fitBounds(bounds);
+        });
     });
 }

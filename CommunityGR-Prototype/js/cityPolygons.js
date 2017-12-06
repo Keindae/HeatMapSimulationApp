@@ -32,7 +32,6 @@ function setBoundaries() {
     bounds = new google.maps.LatLngBounds();
 
     wyomingData = new google.maps.Data();
-    // var wyomingBounds = new google.maps.LatLngBounds();
     wyomingData.addListener('click', function(e) {
         processPoints(e.feature.getGeometry(), bounds.extend, bounds);
         googleMap.fitBounds(bounds);
@@ -83,11 +82,6 @@ function setBoundaries() {
     polygonMap.set('sparta', spartaData);
 
     grandRapidsData = new google.maps.Data();
-    // var grandRapidsBounds = new google.maps.LatLngBounds();
-    // grandRapidsData.addListener('click', function(e) {
-    //     processPoints(e.feature.getGeometry(), bounds.extend, bounds);
-    //     googleMap.fitBounds(bounds);
-    // });
     grandRapidsData.loadGeoJson('https://raw.githubusercontent.com/nguynam/images/master/grandRapidsPolygon.json');
     grandRapidsData.setStyle({
         fillColor: 'purple',
@@ -106,7 +100,6 @@ function setBoundaries() {
     polygonMap.set('byronCenter', byronCenterData);
 
     cedarSpringsData = new google.maps.Data();
-    // var cedarSpringsBounds = new google.maps.LatLngBounds();
     cedarSpringsData.addListener('click', function(e) {
         processPoints(e.feature.getGeometry(), bounds.extend, bounds);
         googleMap.fitBounds(bounds);
@@ -276,14 +269,6 @@ function setDemographics(){
   miDemographic = new google.maps.Data();
   miDemographic.loadGeoJson('http://gis-michigan.opendata.arcgis.com/datasets/172a00f7218b455299682f4d76562757_13.geojson');
 
-}
-
-function zoom(map) {
-    var bounds = new google.maps.LatLngBounds();
-    map.data.forEach(function(feature) {
-        processPoints(feature.getGeometry(), bounds.extend, bounds);
-    });
-    map.fitBounds(bounds);
 }
 
 function processPoints(geometry, callback, thisArg) {

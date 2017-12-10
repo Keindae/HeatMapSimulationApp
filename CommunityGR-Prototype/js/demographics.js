@@ -1,4 +1,4 @@
-var jsonText = '{"kentwood": { "population":"48707","under5":"7","under18":"25","under65":"56","over65":"12","populationPerSquareMile":"2330"},"grandRapids": { "population":"188040","under5":"8","under18":"25","under65":"56","over65":"11","populationPerSquareMile":"4235.6"},"wyoming": { "population":"72125","under5":"8","under18":"27","under65":"56","over65":"9","populationPerSquareMile":"2927.3"},"grandville": { "population":"15378","under5":"7","under18":"25","under65":"53","over65":"15","populationPerSquareMile":"2114.4"}, "walker": { "population":"23537","under5":"6","under18":"23","under65":"59","over65":"12","populationPerSquareMile":"943.7"},"sparta": { "population":"9110","under5":"7","under18":"28","under65":"53","over65":"12","populationPerSquareMile":"250.1"},"rockford": { "population":"5719","under5":"9","under18":"31","under65":"49","over65":"11","populationPerSquareMile":"1764"},"lowell": { "population":"5949","under5":"6","under18":"26","under65":"58","over65":"10","populationPerSquareMile":"182.6"},"caledonia": { "population":"12332","under5":"6","under18":"28","under65":"56","over65":"10","populationPerSquareMile":"353.2"},"byronCenter": { "population":"5822","under5":"7","under18":"31","under65":"48","over65":"14","populationPerSquareMile":"1145.4"}, "comstock":{"population":"10088","under5":"9","under18":"26","under65":"55","over65":"10"}}';
+var jsonText = '{"kentwood": { "population":"48707", "popPercent":"12", "under5":"7","under18":"25","under65":"56","over65":"12","populationPerSquareMile":"2330"},"grandRapids": { "population":"188040", "popPercent":"47", "under5":"8","under18":"25","under65":"56","over65":"11","populationPerSquareMile":"4235.6"},"wyoming": { "population":"72125", "popPercent":"18", "under5":"8","under18":"27","under65":"56","over65":"9","populationPerSquareMile":"2927.3"},"grandville": { "population":"15378", "popPercent":"4", "under5":"7","under18":"25","under65":"53","over65":"15","populationPerSquareMile":"2114.4"}, "walker": { "population":"23537", "popPercent":"6", "under5":"6","under18":"23","under65":"59","over65":"12","populationPerSquareMile":"943.7"},"sparta": { "population":"9110", "popPercent":"2", "under5":"7","under18":"28","under65":"53","over65":"12","populationPerSquareMile":"250.1"},"rockford": { "population":"5719", "popPercent":"1", "under5":"9","under18":"31","under65":"49","over65":"11","populationPerSquareMile":"1764"},"lowell": { "population":"5949", "popPercent":"1", "under5":"6","under18":"26","under65":"58","over65":"10","populationPerSquareMile":"182.6"},"caledonia": { "population":"12332", "popPercent":"3", "under5":"6","under18":"28","under65":"56","over65":"10","populationPerSquareMile":"353.2"},"byronCenter": { "population":"5822", "popPercent":"1", "under5":"7","under18":"31","under65":"48","over65":"14","populationPerSquareMile":"1145.4"}, "comstock":{"population":"10088", "popPercent":"1", "under5":"9","under18":"26","under65":"55","over65":"10"}}';
 
 var citys = JSON.parse(jsonText);
 
@@ -78,40 +78,40 @@ function setSpartaColor(hex){
 
 function setPopulation(){
 	grandRapidsInfoWindow.setContent(citys.grandRapids.population);
-	setGrandRapidsColor(gradArray[citys.grandRapids.population]);
+	setGrandRapidsColor(gradArray[citys.grandRapids.popPercent]);
 
 	wyomingInfoWindow.setContent(citys.wyoming.population);
-	setWyomingColor(gradArray[citys.wyoming.population]);
+	setWyomingColor(gradArray[citys.wyoming.popPercent]);
 
 	grandvilleInfoWindow.setContent(citys.grandville.population);
-	setGrandvilleColor(gradArray[citys.grandville.population]);
+	setGrandvilleColor(gradArray[citys.grandville.popPercent]);
 
 	walkerInfoWindow.setContent(citys.walker.population);
-	setWalkerColor(gradArray[citys.walker.population]);
+	setWalkerColor(gradArray[citys.walker.popPercent]);
 
 	kentwoodInfoWindow.setContent(citys.kentwood.population);
-	setKentwoodColor(gradArray[citys.kentwood.population]);
+	setKentwoodColor(gradArray[citys.kentwood.popPercent]);
 
 	lowellInfoWindow.setContent(citys.lowell.population);
-	setLowellColor(gradArray[citys.lowell.population]);
+	setLowellColor(gradArray[citys.lowell.popPercent]);
 
 	byronCenterInfoWindow.setContent(citys.byronCenter.population);
-	setByronCenterColor(gradArray[citys.byronCenter.population]);
+	setByronCenterColor(gradArray[citys.byronCenter.popPercent]);
 
 	comstockInfoWindow.setContent(citys.comstock.population);
-	setComstockColor(gradArray[citys.comstock.population]);
+	setComstockColor(gradArray[citys.comstock.popPercent]);
 
 	rockfordInfoWindow.setContent(citys.rockford.population);
-	setRockfordColor(gradArray[citys.rockford.population]);
+	setRockfordColor(gradArray[citys.rockford.popPercent]);
 
 	//grandRapidsInfoWindow.setContent(citys.grandRapids.population);
 	//setCedarSpringsColor(gradArray[citys.]);
 
 	caledoniaInfoWindow.setContent(citys.caledonia.population);
-	setCaledoniaColor(gradArray[citys.caledonia.population]);
+	setCaledoniaColor(gradArray[citys.caledonia.popPercent]);
 
 	spartaInfoWindow.setContent(citys.sparta.population);
-	setSpartaColor(gradArray[citys.sparta.population]);
+	setSpartaColor(gradArray[citys.sparta.popPercent]);
 }
 
 function setUnder5(){
